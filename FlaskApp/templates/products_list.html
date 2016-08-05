@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>PEAR is a modern ecommerce site template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/sequence.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link href="jqtransfor/jqtransform.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.nouislider.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="header navbar-inverse navbar-fixed-top">
+    <div class="boxwrap">
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="welcome">Welcome to visitor you can <a href="#">Login</a> or <a href="#">Create an Account</a></p>
+            </div>
+            <div class="col-md-6">
+              <ul class="topnav">
+                <li><a href="#"><i class="fa fa-pencil-square-o"></i>Wishlist (0)</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>My Account</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+                <li><a href="#"><i class="fa fa-check-square-o"></i>Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-3 ">
+              <div  class="logo"><a href="#"><img src="images/logo.png" alt="pear logo"></a></div>
+            </div>
+            <div class="col-md-8 col-sm-9 ">
+              <h3><small>Give us a call :</small> +123 456 7890</h3>
+              <br class="clearfix">
+              <ul class="bottomnav">
+                <li class="currency"><a href="#"><i class="fa fa-usd"></i> US Dollar</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i class="fa fa-usd"></i> Uk Pound</a></li>
+                    <li><a href="#"><i class="fa fa-eur"></i> Euro</a></li>
+                  </ul>
+                </li>
+                <li class="language"> <a href="#"><i><img src="images/flag-english.png" alt="english flag"></i> English</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i><img src="images/flag-france.png" alt="france flag"></i>France</a></li>
+                    <li><a href="#"><i><img src="images/flag-germany.png" alt="germany flag"></i>Germany</a></li>
+                  </ul>
+                </li>
+                <li class="cart"><a href="shopping_cart.html"><i class="fa fa-shopping-cart"></i> 2 item(s) - $907.00</a>
+                  <ul class="subnav">
+                    <li>
+                      <div class="car-item">
+                        <p class="center-text">Your recently added item(s)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-04.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-02.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bottom">
+                        <div class="buttons">
+                          <button class="view-cart" onclick="location.href='shopping_cart.html';">VIEW CART</button>
+                          <button class="checkout" onclick="location.href='checkout.html';">CHECKOUT</button>
+                        </div>
+                        <div class="subtotal">
+                          <h5>Shipping: $5.00</h5>
+                          <h5>total: <span class="blue">$907.00</span></h5>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="nav-shadow">
+        <div class="nav-bg">
+          <div class="container  relative">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="nav-wrap collapse navbar-collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html">HOME</a> </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">PAGES</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index.html">Dark Header</a></li>
+                        <li><a href="home.html">Light Header</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">All Products</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products.html">Grid View</a></li>
+                            <li><a href="products_list.html">List View</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Single Product</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products_details.html">Products Details</a></li>
+                            <li><a href="products_details2.html">Products Details 2</a></li>
+                            <li><a href="products_details3.html">Products Details 3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="shopping_cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Single Blog</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="elements.html">UI Elements</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="404.html">440 error</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">MEGA MENU</a>
+                  <div class="dropdown-menu megamenu">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">Dresses (2)</a></li>
+                          <li><a href="products_list.html">Jackets & Coats (21)</a></li>
+                          <li><a href="products_list.html">Suits & Tailoring (42)</a></li>
+                          <li><a href="products_list.html">Tops (28)</a></li>
+                          <li><a href="products_list.html">Shoes (15)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">New collection (35)</a></li>
+                          <li><a href="products_list.html">Shirts & tops (68)</a></li>
+                          <li><a href="products_list.html">Dress & Design (27)</a></li>
+                          <li><a href="products_list.html">Shoulder bags (65)</a></li>
+                          <li><a href="products_list.html">Laptop and Briefcase (5)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="megamenu-add"><img src="images/mega-image.jpg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="products.html">MEN</a></li>
+                <li class="active"><a href="products.html">WOMEN</a></li>
+                <li><a href="products.html">FASHION</a></li>
+                <li><a href="products.html">JEWELRY</a></li>
+                <li><a href="products.html">ACCESSORIES</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">BLOG</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog_details.html">Singl Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div id="sb-search" class="sb-search">
+              <form>
+                <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                <input class="sb-search-submit" type="submit" value="">
+                <span class="sb-icon-search"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Women</a></li>
+          <li><strong class="blue">Dress & Design</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 rightbar">
+          <div class="banner loading">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <div class="caption">
+                    <h3>Lorem Ipsum is simply</h3>
+                    <p>is simply dummy text of the printing and  typesetting industry. Lorem Ipsum is simply  dummy text of the printing and typesetting industry. </p>
+                  </div>
+                  <img src="images/banner.png" alt="" /> </li>
+                <li>
+                  <div class="caption">
+                    <h3>Lorem Ipsum is simply</h3>
+                    <p>is simply dummy text of the printing and  typesetting industry. Lorem Ipsum is simply  dummy text of the printing and typesetting industry. </p>
+                  </div>
+                  <img src="images/banner.png" alt="" /> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="category-products">
+            <div class="sorter">
+              <div class="sort-by">
+                <div class="cform">
+                  <label>Sort by :</label>
+                  <select name="select">
+                    <option value="Default">&nbsp; Default</option>
+                    <option value="Price">&nbsp; Position</option>
+                    <option value="Price">&nbsp; Name</option>
+                    <option value="Price">&nbsp; Price</option>
+                  </select>
+                </div>
+              </div>
+              <div class="limiter">
+                <div class="cform">
+                  <label>Show :</label>
+                  <select name="select">
+                    <option value="9">&nbsp; 9</option>
+                    <option value="Price">&nbsp; 18</option>
+                    <option value="Price">&nbsp; 27</option>
+                    <option value="Price">&nbsp; 36</option>
+                  </select>
+                </div>
+              </div>
+              <div class="show-compare"> <a href="#" class="compare-button">Products Compare (25)</a> </div>
+              <div class="display-mode"><span>Display by:</span> <a href="products.html" class="display-grid">grid</a><a href="products_list.html" class="display-list  active">List</a></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-01.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-02.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-02.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-03.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-03.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-04.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-04.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-01.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="products_list">
+              <div class="item-image"> <img  src="images/products/small/products-02.png" alt="Product Name">
+                <div class="overly"> <a href="images/products/large/products-02.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details.html" class="linkdetail"><i class="fa  fa-link"></i></a> </div>
+              </div>
+              <div class="item-description">
+                <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr class="border clearfix">
+                <div class="price">$451.00 <q>$479.00</q></div>
+                <div class="button_group">
+                  <button class="button" type="button">Add To Cart</button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                  <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="pager">
+              <p>Showing <strong>9</strong> of 27 pages:</p>
+              <ul>
+                <li><a class="disable">&lt;</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 leftbar">
+          <div class="leftbox category">
+            <h3 class="title"><strong>Products </strong> Categories</h3>
+            <ul class="category_nav">
+              <li><a href="#">Women (16)</a>
+                <ul>
+                  <li class="active"><a href="#">Tops (28)</a></li>
+                  <li><a href="#">Shoes (15)</a></li>
+                  <li><a href="#">Shirts & tops (68)</a></li>
+                  <li><a href="#">Dress & Design (27)</a></li>
+                  <li><a href="#">Shoulder bags (65)</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Men (6)</a>
+                <ul>
+                  <li><a href="#">Tops (28)</a></li>
+                  <li><a href="#">Shoes (15)</a></li>
+                  <li><a href="#">Shirts & tops (68)</a></li>
+                  <li><a href="#">Dress & Design (27)</a></li>
+                  <li><a href="#">Shoulder bags (65)</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Children (8)</a></li>
+              <li><a href="#">FootWear (3)</a></li>
+              <li><a href="#">Accessories (56)</a></li>
+              <li><a href="#">Community (0)</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <div class="leftbox brand">
+            <h3 class="title"><strong>Products </strong>Brand </h3>
+            <ul class="link1">
+              <li class="active"><a href="#">Top Brand</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Dress & Design</a></li>
+              <li><a href="#">Shoulder bags</a></li>
+              <li><a href="#">Accessories (56)</a></li>
+              <li><a href="#">Laptop and Briefcase </a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <div class="leftbox brand">
+            <h3 class="title"><strong>Shop By</strong> Price</h3>
+            <form class="shopby_range">
+              <div id="shopby" class="noUi-target noUi-horizontal noUi-background"></div>
+              <div class="fulwid"><span class="from">
+                <label > From</label>
+                <input id="input-shopby" type="text" name="">
+                </span> <span class="to">
+                <label> To</label>
+                <input type="text" id="input-limit" step="1" max="40" min="0">
+                </span></div>
+              <div class="fulwid">
+                <input type="submit" value="Ok">
+                <input type="button" class="reset" value="Reset">
+              </div>
+            </form>
+          </div>
+          <div class="clearfix"></div>
+          <div class="leftbox brand">
+            <h3 class="title"><strong>Shop By </strong> Color</h3>
+            <ul class="link_color">
+              <li><a href="#" class="bg_red tool" data-original-title="Red" data-placement="top" data-toggle="tooltip">Red</a></li>
+              <li><a href="#" class="bg_yellow tool" data-original-title="Yellow" data-placement="top" data-toggle="tooltip">Yellow</a></li>
+              <li><a href="#" class="bg_blue tool" data-original-title="Blue" data-placement="top" data-toggle="tooltip">Blue</a></li>
+              <li><a href="#" class="bg_skblue tool" data-original-title="Light Blue" data-placement="top" data-toggle="tooltip">Light Blue</a></li>
+              <li><a href="#" class="bg_dkpurple tool" data-original-title="Dark Purple" data-placement="top" data-toggle="tooltip">Dark Purple</a></li>
+              <li><a href="#" class="bg_lipurple tool" data-original-title="Light Purple" data-placement="top" data-toggle="tooltip">Light Purple</a></li>
+              <li><a href="#" class="bg_green tool" data-original-title="Green" data-placement="top" data-toggle="tooltip">Green</a></li>
+              <li><a href="#" class="bg_orange tool" data-original-title="Orange" data-placement="top" data-toggle="tooltip">Orange</a></li>
+              <li><a href="#" class="bg_magenta tool" data-original-title="Magenta" data-placement="top" data-toggle="tooltip">Magenta</a></li>
+              <li><a href="#" class="bg_chocolate tool" data-original-title="Chocolate" data-placement="top" data-toggle="tooltip">Chocolate</a></li>
+              <li><a href="#" class="bg_black tool" data-original-title="Black" data-placement="top" data-toggle="tooltip">Black</a></li>
+              <li><a href="#" class="bg_gray  tool" data-original-title="Gray" data-placement="top" data-toggle="tooltip">Gray</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <div class="special-deal">
+            <h3 class="title"><strong>Special </strong> Deals</h3>
+            <div class="special-item">
+              <div class="product-image"><a href="#"><img src="images/products/thum/products-thum-03.png" alt=""></a></div>
+              <div class="product-info">
+                <p>Lorem ipsum dolor sit consectetuer</p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="product-image"><a href="#"><img src="images/products/thum/products-thum-01.png" alt=""></a></div>
+              <div class="product-info">
+                <p>Lorem ipsum dolor sit consectetuer</p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="product-image"><a href="#"><img src="images/products/thum/products-thum-02.png" alt=""></a></div>
+              <div class="product-info">
+                <p>Lorem ipsum dolor sit consectetuer</p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="leftbox">
+            <h3 class="title"><strong>Find us on </strong> Facebook</h3>
+            <div class="facebookwrap">
+              <iframe id="fbframe" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=230&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=467334619951816"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="brandingwrap">
+    <div class="container">
+      <div class="logocarousel">
+        <div class="logo-control"><a id="prev_logo" class="prev" href="#">&lt;</a><a id="next_logo" class="next" href="#">&gt;</a></div>
+        <ul id="brandlogo">
+          <li> <a href="#" class=""> <img src="images/activeden.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/graphicriver.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/photodun.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/themeforest.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/videohive.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/activeden.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/graphicriver.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/photodun.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/themeforest.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/videohive.png" alt=""/> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 information">
+            <h4 class="title"><strong>Information</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="typography.html">About Us</a></li>
+              <li><a href="typography.html">Delivery Information</a></li>
+              <li><a href="typography.html">Privacy Policy</a></li>
+              <li><a href="typography.html">Terms & Conditions</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 account">
+            <h4 class="title"><strong>My Account</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="checkout.html">My Account</a></li>
+              <li><a href="checkout.html">My Order History</a></li>
+              <li><a href="checkout.html">MY Wish list</a></li>
+              <li><a href="shopping_cart.html">Shopping cart</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 contact-info">
+            <h4 class="title"><strong>Contacts</strong></h4>
+            <p><i class="fa fa-phone"></i> 123 456 7890</p>
+            <p><i class="fa fa-envelope-o"></i><a href="mailto:info@yourstore.com">info@yourstore.com</a></p>
+            <p><i class="fa fa-map-marker"></i> <span class="adress">56  Green Street,  Stamford,<br>
+              06903, CT, USA</span></p>
+          </div>
+          <div class="col-md-3 col-sm-6 latest-news">
+            <h4 class="title"><strong>Get Latest News?</strong></h4>
+            <form class="newsletter">
+              <input  type="text" name="" placeholder="Enter Your Email Address">
+              <input type="submit" value="+" data-original-title="SUBMIT" data-placement="top" data-toggle="tooltip" class="tool button">
+            </form>
+            <ul class="payment-icon">
+              <li><a href="#"><img src="images/visa.png" alt="Visa Card"></a></li>
+              <li><a href="#"><img src="images/mastar-card.png" alt="Master Card"></a></li>
+              <li><a href="#"><img src="images/american-express.png" alt="American Express"></a></li>
+              <li><a href="#"><img src="images/paypal.png" alt="Paypal"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2014 All Rights Reserved @ yourcompany.com</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://plus.google.com/‎" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.rss.com/" target="_blank"><i class="fa fa-rss"></i></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <a href="#javascript:void(0)" id="back_top" >TOP</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+
+<!-- ~~jQuery expanding nav~~ !--> 
+<script type="text/javascript" src="js/classie.js"></script> 
+<script type="text/javascript" src="js/uisearch.js"></script> 
+<!-- ~~Sequence Slider~~ !--> 
+<script type="text/javascript"  src="js/jquery.sequence-min.js"></script> 
+<!-- ~~product carousel~~ !--> 
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+<!-- ~~Catagory Navigation~~ !--> 
+<script type="text/javascript" src="js/scriptbreaker-multiple-accordion.js"></script> 
+<!-- ~~Flex slider~~ !--> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+<!-- ~~Jquery Custome Form element~~ !--> 
+<script type="text/javascript" src="jqtransfor/jquery.jqtransform.js"></script> 
+<!-- ~~Noui Price slider~~ !--> 
+<script type="text/javascript" src="js/jquery.nouislider.js"></script> 
+<!-- ~~jQuery Fancey Box~~ !--> 
+<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+<!-- ~~Nice scroll~~ !--> 
+<script src="js/jquery.nicescroll.min.js"></script> 
+<!-- ~~Main Script~~ !--> 
+<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

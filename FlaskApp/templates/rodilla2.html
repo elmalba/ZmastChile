@@ -1,0 +1,199 @@
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Medicos</a></li>
+          <li><strong class="blue">Detalle</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col-md-12">
+          <div class="blog_wrap">
+            <div class="post_details">
+              <div class="post_content">
+                 <div class="post-header">
+                  <h3 class="post-title"><a href="#">RODILLA DE SALTADOR</a></h3>
+                </div>
+                <div class="meta_space">
+                  <div class="post_date"><span>03</span>Jan 2014</div>
+                </div>
+              
+
+    
+    <div class="col-md-7 ">   
+
+    <div class="col-md-3 "> 
+ <div class="post-image"><img src="/static/images/lesiones/RODILLA2.png" alt="" ><a href="/static/images/lesiones/RODILLA2.png" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+
+</div>
+    <div class="col-md-9 "> 
+<p>
+    <strong>LESIONES:</strong>
+</p>
+<p>
+    <strong>Rodilla de saltador</strong>
+</p>
+<p>
+    Una de las patologías frecuentes en los deportes de salto y carrera es la rodilla de saltador. Se trata de una tendinopatía del tendón rotuliano, tendón
+    que une la tibia a la rótula en prolongación del cuádriceps.
+</p>
+<p>
+    Los orígenes de esta lesión son variados:
+</p>
+<p>
+    - Tracciones repetitivas
+</p>
+<p>
+    - Desequilibrios de fuerza entre flexores y extensores
+</p>
+<p>
+    - Mala posición o inestabilidad de la rótula.
+</p>
+<p>
+    En los deportistas en periodo de crecimiento, la tracción repetida del tendón rotuliano, puede dar lugar a una patología llamada Osgood Schlatter, que se
+    caracteriza por un fuerte dolor en la inserción del tendón sobre la tibia (tuberosidad tibial anterior).
+</p>
+<p>
+    <strong>SIGNOS Y SÍNTOMAS:</strong>
+</p>
+<p>
+    Dolor que puede seguir de manera indistinta, a lo largo del tendón en sus inserciones, disminuyendo en una primera fase con calor, antes de establecerse
+    como una patología permanente.
+</p>
+
+              
+</div></div>
+    <div class="col-md-5 ">  
+<div class="col-md-12">
+            <div class="newer-products">
+              <h3 class="title"><strong>Soluciones </strong> Zamst</h3>
+              <div class="control"><a id="prev_newer" class="prev" href="#">&lt;</a><a id="next_newer" class="next" href="#">&gt;</a></div>
+              <ul id="newer" class="related3">
+                <li>
+                  <div class="row">
+                   {% for i in range(2) %}
+           
+                  
+                    <div class="col-md-6 col-sm-6">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendados[i][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendados[i][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendados[i][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendados[i][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendados[i][0]}}-{{recomendados[i][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendados[i][2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendados[i][2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendados[i][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendados[i][0]}}-{{recomendados[i][1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendados[i][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+                 {% endfor %}
+                 </div>
+                  
+                </li>
+                 <li>
+                  <div class="row">
+                  
+           
+                  
+                    <div class="col-md-6 col-sm-6">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendados[2][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendados[2][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendados[2][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendados[2][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendados[2][0]}}-{{recomendados[2][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendados[2][2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendados[2][2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendados[2][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendados[2][0]}}-{{recomendados[2][1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendados[2][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+               
+                 </div>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div></div>
+    <div class="col-md-7 ">   
+       <strong>LAS LESIONES DEL CORREDOR:</strong>
+
+    <div class="col-md-4 "> 
+ <div class="post-image"><img src="/static/images/lesiones/RODILLERA3.PNG" alt="" ><a href="/static/images/lesiones/RODILLERA3.PNG" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+
+</div>
+   <div class="col-md-8 "> 
+<p>
+    <strong>TENDÓN CUADRICIPITAL</strong>
+</p>
+<p>
+    Numerosos impactos y la reiteración de saltos pueden inflamar el tendón del cuádriceps.
+</p>
+<p>
+    <strong>RÓTULA</strong>
+</p>
+<p>
+    El síndrome rotuliano, es una inestabilidad de la rótula.
+</p>
+  </div>  </div>
+   <div class="col-md-4 "> 
+
+<p>
+    <strong>TENDÓN ROTULIANO</strong>
+</p>
+<p>
+    La repetición de los impactos solicita de manera muy exigente al tendón, que se puede inflamar.
+</p>
+<p>
+    <strong>OSGOOD-SCHLATTER</strong>
+</p>
+<p>
+    Es una inflamación del tendón rotuliano, frecuente en los deportistas jóvenes en periodo de crecimiento. Se localiza en la inserción del tendón sobre la
+    tibia.
+</p>
+</div>
+
+
+  
+
+      
+            
+              <div class="clearfix"></div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>

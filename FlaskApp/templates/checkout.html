@@ -1,0 +1,238 @@
+  <div class="boxwrap white-bg pad-bottom30">
+
+    <div class="clearfix"></div>
+    <div class="container" >
+      <div class="shopping-cart" >
+        <h3 class="title"><strong>Checkout</strong></h3>
+        <div class="checkout-page" ng-if="carro.length!=0">
+          <ol id="checkoutSteps">
+            <li id="01" class="panel steps active">
+              <div class="step-title"> <a href="#checkout-step-login" data-parent="#checkoutSteps" data-toggle="collapse" class=""><span class="number">01.</span>
+                <h5>Iniciar Sessión</h5>
+                <span class="setps-arow"></span></a> </div>
+              <div id="checkout-step-login" class="step-description in" style="height: auto;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="box new-customer">
+                      <h4>Nuevo Usuario</h4>
+                      
+                      <form class="cform">
+                        <p class="note">Crea una cuenta para tus compras en zamstchile.</p>
+                        <a href="#checkout-step-billing" data-parent="#checkoutSteps" data-toggle="collapse" class="button">Registrarme</a>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box registered-customer">
+                      <h4>Usuarios Registrados</h4>
+                      <p>Si tienes cuenta inicia session.</p>
+                      <form class="cform">
+                        <p>
+                          <label><strong class="red">*</strong> Email :</label>
+                          <input type="text" placeholder="Correo">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Password :</label>
+                          <input  type="password" placeholder="******">
+                        </p>
+                        <p class="fpass"><a href="#">Olvidaste la contraseña?</a></p>
+                        <p class="remembered">
+                          <input type="checkbox" name="" value="">
+                          <span class="text">Recordar contraseña</span> </p>
+                        <input type="submit" value="Entrar" class="button">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="02" class="panel steps">
+              <div class="step-title"> <a href="#checkout-step-billing" data-parent="#checkoutSteps" data-toggle="collapse" class="collapsed"><span class="number">02.</span>
+                <h5>Datos Personales</h5>
+                <span class="setps-arow"></span></a> </div>
+              <div id="checkout-step-billing" class="step-description collapse" style="height: 0px;">
+                <form  class="cform">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="box personal-details">
+                        <h4>Tus datos personales</h4>
+                        <p>
+                          <label><strong class="red">*</strong> Nombre :</label>
+                          <input type="text" ng-model="nuevo.nombre">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Apellido :</label>
+                          <input type="text" ng-model="nuevo.apellido" >
+                        </p>
+                         <p>
+                          <label><strong class="red">*</strong> Rut :</label>
+                          <input type="text" ng-model="nuevo.rut" name="rut">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Email :</label>
+                          <input type="text" ng-model="nuevo.email" name="email">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Telefono :</label>
+                          <input type="text" ng-model="nuevo.phone" name="telephone">
+                        </p>
+                         <p>
+                          <label><strong class="red">*</strong> Celular :</label>
+                          <input type="text" ng-model="nuevo.celphone" name="telephone">
+                        </p>
+                     
+                        <p>
+                          <label><strong class="red">*</strong> Contraseña :</label>
+                          <input type="password"  ng-model="nuevo.passwd" name="pass">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Confirmar Contraseña :</label>
+                          <input type="password"  ng-model="nuevo.passwd2" name="cpass">
+                        </p>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="box personal-details">
+                        <h4>Detalles de envio</h4>
+                        <p>
+                          <label><strong class="red">*</strong> Nombre :</label>
+                          <input type="text" ng-model="nuevo.destintario" name="fname">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Direccion :</label>
+                          <input type="text" ng-model="nuevo.dir" name="address1">
+                        </p>
+                        <p>
+                          <label><strong class="red">*</strong> Región :</label>
+                          <input type="text" ng-model="nuevo.region" name="city ">
+                        </p>
+
+                        <p>
+                          <label><strong class="red">*</strong> Ciudad :</label>
+                          <input type="text" ng-model="nuevo.city" name="city ">
+                        </p>
+                         <p>
+                          <label><strong class="red">*</strong> Comuna :</label>
+                          <input type="text" ng-model="nuevo.comuna" name="city ">
+                        </p>
+                        
+                        <p class="remembered">
+                          <input type="checkbox" name="" ng-model="nuevo.acuerdo" value="">
+                          <span class="cboxtext">Estoy de acuerdo, que pueden haber gastos de envios adicionales.</span> </p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li> 
+            <li  id="opc-orderReview"  class="panel steps">
+              <div class="step-title"><a href="#orderReview" data-parent="#checkoutSteps" data-toggle="collapse" class="collapsed"> <span class="number">03.</span>
+                <h5>Revisar orden</h5>
+                <span class="setps-arow"></span></a> </div>
+              <div class="clearfix"></div>
+              <div id="orderReview" class="step-description collapse" style="height: 0px;">
+                <form  class="cform">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="sipping-table">
+                        <table>
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Detalles</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acccion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in carro">
+                <td><div class="shiping-image" style="width:150px"><img ng-src="/static/images/productos/{{'{{item.id}}'}}.jpg" alt=""></div></td>
+                <td><div class="shiping-description">
+                    <h4>{{"{{item.nombre}}"}}</h4>
+                   
+                  
+                   
+                    <p class="product-code"><span class="text"> Product Code: </span> CL{{"{{item.id}}"}} </p>
+                  </div></td>
+                <td><h5>${{"{{item.precio}}"}}</h5></td>
+                <td><div class="qtygroup">
+                    <input type="text" class="qty" ng-model="item.cantidad" >
+                    <a class="minus" ng-click="bajar($index)" > - </a> <a class="add" ng-click="subir($index)" > + </a> </div></td>
+                <td><h5>{{"{{item.precio*item.cantidad}}"}}</h5></td>
+                <td><div class="action">
+                    <a class="trash" ng-click="eliminar($index)"><i class="fa fa-trash-o"></i></a>
+                    <br>
+                    <br>
+                    <a ng-href="/Producto/{{'{{item.id}}'}}-" class="pencil"><i class="fa  fa-shopping-cart"></i></a>
+                  </div></td>
+              </tr>
+              
+            </tbody>
+           
+                          <tfoot id="generar">
+
+
+                            <tr>
+
+                              <td colspan="6">
+
+
+                             
+                                <a   class="continue-shopping order-now" ng-click="generar()"> <ul>
+              
+                <li><span>TOTAL</span> <strong class="Red">${{"{{monto}}"}}</strong></li>
+                <li>
+                  <button   >Generar Orden</button>
+                </li>
+
+
+              </ul></a></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li id="esperar" class="panel steps active" id="order" style="display:none">
+              <div class="step-title"> <a href="#checkout-order" data-parent="#checkoutSteps" data-toggle="collapse" class=""><span class="number"></span>
+                <h5>Espere Por favor</h5>
+                <span class="setps-arow"></span></a> </div>
+
+              </li>
+
+
+            
+
+          </ol>
+
+          <div id="order" style="display:none"class="step-description in" style="height: auto;">
+                <div class="row">
+                  <div class="col-md-6 centerbar">
+                    <div class="box new-customer">
+                      <h4>Orden Numero : {{"{{orderid}}"}}</h4>
+                      
+                      <form class="cform">
+                        <p class="note">Estimado(a) {{"{{nuevo.nombre}}"}} {{"{{nuevo.apellido}}"}} su pedido fue creado con exito, a la brevedad le enviaremos un mail con la informacion correspondiente </p>
+
+                        <p class="note">Además puede visitar el siguiente link para mayor informacion: <br>
+                      <a ng-href='http://pagos.zamstchile.com/{{"{{mail}}"}}/0000000{{"{{orderid}}"}}'>http://pagos.zamstchile.com/{{"{{mail}}"}}/0000000{{"{{orderid}}"}}</a> .</p>
+                        
+                      </form>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+

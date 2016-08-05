@@ -1,0 +1,125 @@
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Medicos</a></li>
+          <li><strong class="blue">Detalle</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col-md-12">
+          <div class="blog_wrap">
+            <div class="post_details">
+              <div class="post_content">
+                 <div class="post-header">
+                  <h3 class="post-title"><a href="#">Espalda</a></h3>
+                </div>
+                <div class="meta_space">
+                  <div class="post_date"><span>03</span>Jan 2014</div>
+                </div>
+              
+<div class="col-md-2 ">
+
+ <div class="post-image"><img src="/static/images/lesiones/ESPALDA.png" alt="" ><a href="/static/images/lesiones/ESPALDA.png" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+
+</div>
+
+    <div class="col-md-9 ">   
+ <p> <strong>LESIONES</strong> La lumbalgia </p>
+
+  <p> La lumbalgia común, también llamada “mal del siglo”, es el dolor de espalda que padece o padecerá el s de 80% de nosotros, no sólo los deportistas.
+Se trata de dolor en la parte baja de la espalda que puede orígenes tan distintos como la artrosis, degeneración discal, problemas ginecológicos o intestinales, etc.
+Afortunadamente, a menudo no se trata más que de un simple problema de desequilibrio muscular, de una faltade movilidad o de una mala postura.
+En caso del deportista, una sobrecarga de entrenamiento, un mal gesto, repetidos traumatismos o tan solo, una descompensación muscular puede tener las mismas consecuencias.
+La región lumbar es especialmente sensible a lo que denomina el “arco reflejo doloroso”.
+Por lo tanto, un buen equilibrio entre los abdominales y lumbares, permite a nuestra columna vertebral conservar una buena posición, evitando cualquier hundimiento, pinzamiento o cualquier otra contrariedad, además de permitirle absorber mejor los impactos que provengan de los miembros inferiores (importantes durante la práctica deportiva).
+</p>
+
+
+
+
+
+
+
+              </div>
+            
+              <div class="clearfix"></div>
+ <div class="col-md-12">
+            <div class="newer-products">
+              <h3 class="title"><strong>Soluciones </strong> Zamst</h3>
+              <div class="control"><a id="prev_newer" class="prev" href="#">&lt;</a><a id="next_newer" class="next" href="#">&gt;</a></div>
+              <ul id="newer" class="related3">
+                <li>
+                  <div class="row">
+                   {% for recomendado in recomendados %}
+           
+                  
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendado[0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendado[1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendado[0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendado[1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendado[0]}}-{{recomendado[1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendado[2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendado[2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendado[1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendado[0]}}-{{recomendado[1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendado[0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+                 {% endfor %}
+                 </div>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+<div class="clearfix"></div>
+    <div class="col-md-12 ">   
+ <p> <strong>PAPEL DE LAS FAJAS DINÁMICAS LUMBARES:</strong> </p>
+
+  <p><strong> 1.- Aplicación de una presión abdominal suplementaria</strong></p>
+  <p> Las vértebras lumbares se sostienen por la musculatura abdominal y lumbar. Una sujeción externa, que aumente la presión sobre la zona abdominal y sosteniendo las vértebras lumbares, puede aliviar eficazmente el dolor.</p>
+  <p><strong> 2.- Restricción de la extensión lumbar</strong></p>
+  <p> El mantenimiento de una postura apropiada refuerza la estabilidad de la columna lumbar. La prevención de la hiperextensión (extensión del cuerpo hacia atrás), que provoca una sobrecarga, reduce los esfuerzos que debe hacer la columna lumbar.</p>
+  <p><strong> 3.- Estabilización mecánica de la región lumbar y de la articulación sacro-ilíaca</strong></p>
+  <p> Las vértebras lumbares se apilan en el sacro como cubos. La acción de compresión externa y mantener el sacro, proporciona apoyo y la estabilización de esta última y la columna lumbar.</p>
+  <p><strong> 4.- Efecto analgésico del calor</strong></p>
+
+
+
+
+
+
+
+              </div>
+            
+              <div class="clearfix"></div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>

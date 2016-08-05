@@ -1,0 +1,176 @@
+<div class="hom-slider" >
+  <div style="position: relative; left: 5px;">
+        <ul class="bxslider" >
+<!--  <li><img src="http://zamst.fr/image.php?width=962&height=465&image=/images/source/634.jpg" style="width:100%" alt=""></li>!-->
+  <li><img src="http://zamst.us/image.php?width=962&height=465&image=/images/source/655.jpg" style="width:100%" alt=""></li>
+  <li><img src="http://zamst.us/image.php?width=962&height=465&image=/images/source/615.jpg" style="width:100%" alt=""></li>
+  <li><img src="http://zamst.us/image.php?width=962&height=465&image=/images/source/625.jpg" style="width:100%" alt=""></li>
+  <li><img src="http://zamst.us/image.php?width=962&height=465&image=/images/source/614.jpg" style="width:100%" alt=""></li>
+  <li><img src="http://zamst.us/image.php?width=962&height=465&image=/images/source/655.jpg" style="width:100%" alt=""></li>
+
+
+</ul></div>
+      </div>
+      <!-- end slider -->
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- END HEADER --> 
+  
+
+  
+ 
+    <div class="container">
+      <div class="featured-products">
+         <div class="col-md-1">
+</div>
+<div class="col-md-9 ">
+<table >
+            <tbody><tr>
+    <td style="width:251px;height:151px;background:url(http://zamst.us/images/Z-RX-bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+                    <div style="clear:both;height:25px;"></div>
+        <div style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z RX
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6" style="color:#fff" >
+                      <p >
+      Escoge el producto adecuado, seleccionando la lesion</p>
+        </div>
+                    <div  style="clear:both;height:-4px;"></div>
+        <div class="col-md-10 col-sm-6">
+                        <select onchange="document.location.href='/Productos#problema/'+this.value;" style="width:200px;">
+                          <option value="-1">Seleccionar Lesión</option>
+                          {% for i in  range(problemas|length)  %}
+                      <option value="{{i}}">{{problemas[i][0]}}</option>
+                      {% endfor %}
+                                  </select>
+                    </div>
+    </td>
+    <td>&nbsp;</td>
+    <td style="width:251px;height:151px;background:url(http://zamst.us/images/Z-Sport-bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+                    <div style="clear:both;height:25px;"></div>
+           <div  class="col-md-10 col-sm-6" style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z Sport
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6"  >
+                         <p style="color:#fff">
+        Escoge la ayuda adecuada para tu deporte </p>
+        </div>
+                    <div class="clearfix"></div>
+        <div  class="col-md-10 col-sm-6">
+                        <select onchange="document.location.href='/Productos#deporte/'+this.value;" style="width:180px;">
+                          <option value="-1">Selecionar deporte</option>
+                      {% for i in  range(deporte|length)  %}
+                      <option value="{{i}}">{{deporte[i][0]}}</option>
+                      {% endfor %}
+                                  </select>
+                    </div>
+    </td>
+    <td>&nbsp;</td>
+    <td style="width:449px;height:151px;background:url(http://zamst.us/images/Knowladge_bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+        <div style="clear:both;height:25px;"></div>
+       <div  class="col-md-10 col-sm-6" style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z Knowledge Center
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6" style="width:415px; margin:0 auto; color:#fff;font-size:12px;">
+      Precision engineered support is developed for athletes to maintain strength, enhance rehab, prevent further injuries and protect existing injuries        </div>
+                    <div style="clear:both;height:10px;"></div>
+      <table border="0" style="margin:0 auto;font-family:Arial; color:#fff;font-size:16px;font-weight:bold;">
+          <tbody><tr>         <td><a href="/Procesos" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase">PROCESOS  </a></td>
+          <td>&nbsp;</td>         <td><a href="/Inovacion" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase"> INNOVACIÓN</a></td>
+          <td>&nbsp;</td>         <td><a href="/Lesiones" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase">LESIONES </a></td>
+         
+          </tr>     </tbody></table>
+                    
+    </td>
+            </tr>
+        </tbody></table>
+</div>
+
+
+
+        <div class="col-md-4">
+          <h3 class="title"><strong>Zamst </strong> Noticias </h3>
+
+          
+         
+            <ul>
+               {%for blog in blogdata %} 
+              <li>
+               
+                 
+              
+                    <div class=" col-sm-7 post_content">
+                      <div class="post-image"><img src="/static/images/productos/{{blog[5]}}.jpg" alt="" ><a src="/static/images/productos/{{blog[6]}}.jpg" data-fancybox-group="featured" class="zoomic fancybox" title="What is Lorem Ipsum?"><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+                    </div>
+                    <div class=" col-sm-5 post_content">
+
+                    
+                      <p>{{blog[1]}}</p>
+                      <a class="btn btn-default" href="/Medicos/detalle/{{blog[0]}}-{{blog[1]}}">Leer más <i class="fa fa-long-arrow-right"></i></a></div>
+            
+               
+              </li>
+              {%endfor %}
+            </ul>
+   
+        
+        </div>
+
+        <div class="col-md-8">
+        <h3 class="title"><strong>Mejores </strong> Productos</h3>
+        <div class="control"><a id="prev_featured" class="prev" href="#">&lt;</a><a id="next_featured"  class="next" href="#">&gt;</a></div>
+        <ul id="featured">
+          
+          {% for j in range(2): %}
+          <li>
+            <div class="row">
+              {% for i in range(j*3,j*3+3): %}
+              <div class="col-md-4 col-sm-6">
+                <div class="products">
+                  <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{productos[i][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{productos[i][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{productos[i][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{productos[i][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{productos[i][0]}}-{{productos[i][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice"></h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price"></h4>
+                    <p class="name">{{productos[i][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{productos[i][0]}}-{{productos[i][1].replace("/"," ")}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" ng-click= "agregar({{productos[i][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+              
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      </div>
+  
+    </div>
+    <div class="clearfix"></div>
+    <br>
+    
+  </div>
+ 
+
+ <script>
+var holi;
+
+function Agregar_carro (Id) {
+var url = "/Agregar/"+Id+"/1";
+Recargar(url,true);
+}
+</script>
+
+

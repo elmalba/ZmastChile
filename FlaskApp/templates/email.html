@@ -1,0 +1,85 @@
+ <html>
+  <head></head>
+  <body>
+  <div class="boxwrap white-bg pad-bottom30">
+ 
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="shopping-cart">
+        <h1 class="title"><strong>Zamst</strong> chile</h1>
+        <p>Estimado(a): {{info.nombre}} {{info.apellido}} <br>
+         Su carrito de compra se ha convertido en la orden de compra N : {{idorder}}<br>
+         en unas horas nuestros vendedores se comunican con usted para concretar la venta.<br>
+         Nuestra informacion sobre usted es la siguiente<br>
+         Nombre : {{info.nombre}} <br>
+         Apellido : {{info.apellido}}<br>
+         Rut : {{info.rut}}<br>
+         Email : {{info.email}}<br>
+         Telefono : {{info.redfija}}<br>
+         Celular : {{info.celular}}<br>
+         Nombre Destinatario : {{info.destintario}}<br>
+         Direccion : {{info.dir}}<br>
+         Región : {{info.region}}<br>
+         Ciudad : {{info.city}}<br>
+         Comunda : {{info.comuna}}</p>
+
+        <p> Más informacion en el link http://pagos.zamstchile.com/{{info.email}}/000000{{idorder}}</p>
+
+        <h3 class="title"><strong>Orden</strong> de compra</h3>
+        <div class="sipping-table" ng-if="carro.length!=0">
+          <table>
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Detalles</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              {%for item in carro %}
+              <tr >
+                <td><div class="shiping-image" style="width:150px"><img src="http://zamstchile.com/static/images/productos/{{item.id}}.jpg"style="width:150px" alt=""></div></td>
+                <td><div class="shiping-description">
+                    <h4>{{item['nombre']}}</h4>
+                   
+                  
+                   
+                    <p class="product-code"><span class="text"> Product Code: </span> CL {{item.id}}</p>
+                  </div></td>
+                  <td><h5>{{item.cantidad}} <strong>X</strong></h5></td>
+                <td><h5>${{('{:20,}'.format(item.precio)).replace(",",".")}}.-</h5></td>
+               
+                <td><h5>${{('{:20,}'.format(item.precio*item.cantidad)).replace(",",".")}}.-</h5></td>
+             
+              </tr>
+              {% endfor %}
+              
+            </tbody>
+        
+          </table>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+
+          <div class="col-md-4 rightbar" ng-if="carro.length!=0">
+            <div class="box processto-checkout">
+              <ul>
+              
+                <li><span>TOTAL</span> <strong class="blue">${{('{:20,}'.format(monto)).replace(",",".")}}.-</strong></li>
+                <li>
+                  <a href="http://pagos.zamstchile.com/malba@mmae.cl/00000001">Proceder a pagar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="products-details">
+        <div class="row">
+          <div class="col-md-7">
+           
+            <div class="product-view2">
+              <div class="product-img-box"> <img id="big_image" src="/static/images/productos/{{data.id}}.jpg"  alt=""> <a href="/static/images/productos/{{data.id}}.jpg" data-fancybox-group="gallery" class="fancybox box-zoom"><i class="fa fa-search"></i></a></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="product-details-box details3">
+              <h4 class="name">{{data.nombre}}</h4>
+              <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star light-gray"></i><i class="fa fa-star light-gray"></i> </span> <a href="#">02 Review(s)</a> <span class="separator">|</span> <a href="#">Add your review</a></p>
+              <hr class="border">
+           
+              
+              <p class="sku"> <strong>Sku : </strong> CL{{producto[0][0]}}</p>
+              <hr class="border">
+              <p class="price">${{('{:20,}'.format(producto[0][5])).replace(",",".")}}.- </p>
+              <hr class="border">
+                  {% for text in data.text %}
+                  <p>{{text}}</p>
+                  {% endfor %}
+              <form>
+              
+                <p class="size_chooser"> <span class="text"> Talla : </span>
+                  {% for talla in data.talla %}
+                 <a href="javascript:void(0);">{{talla}}</a> 
+                 {% endfor %}
+                  </p>
+                <div class="buttons_wrap">
+                  <p class="quantity"><span class="text">Qty : </span> </p>
+                  <div class="qtygroup">
+                    <input type="text" id="qty1" value="1" class="qty"/>
+                    <a id="minus1" class="minus">-</a> <a  id="add1" class="add">+</a> </div>
+                  <button type="button" class="button addto-cart blue" ng-click="agregar_detalle({{data.id}},2)">Agregar</button>
+                </div>
+                <hr class="border">
+                <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button blue" type="button"> <i class="fa fa-exchange"></i></button>
+                <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button blue" type="button"> <i class="fa fa-heart-o"></i></button>
+                <button data-original-title="Email to Frind" data-placement="top" data-toggle="tooltip" class="tool button blue" type="button"> <i class="fa fa-envelope-o"></i></button>
+                <div class="share"> <a href="#" data-original-title="Facebook" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-facebook-square"></i></a> <a href="#" data-original-title="Twiter" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-twitter-square"></i></a> <a href="#" data-original-title="Google Plus" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-google-plus-square"></i></a> <a href="#" data-original-title="Rss Feed" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-rss-square"></i></a> <a href="#" data-original-title="Likedin" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-linkedin-square"></i></a> <a href="#" data-original-title="Pintereset" data-placement="top" data-toggle="tooltip" class="tool" ><i class="fa fa-pinterest-square"></i></a> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="tab-box tabColum_2">
+              <div id="tabnav">
+                <ul>
+                  
+                  {% if tecnologias != ""  %}
+                  <li class="active"><a href="#Specfications">Tecnologias</a></li>{%endif%}
+                  {% if producto[0][7] != "" and producto[0][7] != None  %}
+                  <li><a href="#Return">Videos</a></li>{%endif%}
+                  {% if producto[0][8] != "" and producto[0][8] != None  %}
+                  <li><a href="#Reviews">Video Rendimiento</a></li>{%endif%}
+                 
+                </ul>
+              </div>
+              <!-- end #nav -->
+              <div class="tab-content-wrap">
+                <div class="tab-content" id="Description">
+                  <h3>{{ data.subnombre }}</h3>
+                        <div class="col-md-11 col-sm-12">
+                  {% for text in data.text %}
+                  <p>{{text}}</p>
+                  {% endfor %}
+                </div> </div>
+                <div class="tab-content" id="Specfications">
+              
+                  {%for tecno in tecnologias%}
+                  <div class="col-md-12 col-sm-12">
+                    
+                    <div class="col-md-3 col-sm-12">
+                     
+                      <img src="http://www.hso2.com/{{tecno[2]}}"><br>
+                      
+
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+
+                    <p><b>{{tecno[0]}}</b></p>
+                    <br>
+                    <p>{{tecno[1]}}</p>
+<br><br>
+                  </div>
+                  </div>
+                  
+
+                  {% endfor %}
+                </div>
+                <div class="tab-content" id="Return">
+                  <h3>Videos</h3>
+                  <iframe width="560" height="315" src="//www.youtube.com/embed/{{producto[0][7]}}" frameborder="0" allowfullscreen></iframe>
+
+
+                </div>
+                 <div class="tab-content" id="Reviews">
+                  <h3>Videos</h3>
+                  <iframe width="560" height="315" src="//www.youtube.com/embed/{{producto[0][8]}}" frameborder="0" allowfullscreen></iframe>
+
+
+                </div>
+                
+                <div class="tab-content" id="writeReviews">
+                  <h3>Write your own review</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>&nbsp;</th>
+                        <th>Quality</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>1star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="1">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="1">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="1">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>2star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="2">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="2">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="2">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>3star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="3">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="3">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="3">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>4star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="4">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="4">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="4">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>5star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="5">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="5">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="5">
+                          </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>
+                          <label>Your Name <span class="red">*</span></label>
+                          <input type="text" name="">
+                        </p>
+                        <p>
+                          <label>Your Email <span class="red">*</span></label>
+                          <input type="email" name="">
+                        </p>
+                        <p>
+                          <label>Review Summary <span class="red">*</span></label>
+                          <input type="text" name="">
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <label>Review</label>
+                          <textarea rows="7"></textarea>
+                        </p>
+                        <p>
+                          <input type="submit" value="Submit">
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+              <!-- end #content --> 
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="newer-products">
+              <h3 class="title"><strong>Productos </strong> Recomendados</h3>
+              <div class="control"><a id="prev_newer" class="prev" href="#">&lt;</a><a id="next_newer" class="next" href="#">&gt;</a></div>
+              <ul id="newer" class="related3">
+                <li>
+                  <div class="row">
+                   {% for recomendado in recomendados %}
+           
+                  
+                    <div class="col-md-6 col-sm-6">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendado[0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendado[1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendado[0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendado[1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendado[0]}}-{{recomendado[1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendado[2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendado[2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendado[1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendado[0]}}-{{recomendado[1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendado[0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+                 {% endfor %}
+                 </div>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="/static/js/modernizr.custom.js"></script> 
+
+<!-- ~~jQuery expanding nav~~ !--> 
+<script type="text/javascript" src="/static/js/classie.js"></script> 
+<script type="text/javascript" src="/static/js/uisearch.js"></script> 
+<!-- ~~Sequence Slider~~ !--> 
+<script type="text/javascript"  src="/static/js/jquery.sequence-min.js"></script> 
+<!-- ~~product carousel~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.touchSwipe.min.js"></script> 
+<!-- ~~Catagory Navigation~~ !--> 
+<script type="text/javascript" src="/static/js/scriptbreaker-multiple-accordion.js"></script> 
+<!-- ~~Flex slider~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.flexslider.js"></script> 
+<!-- ~~Jquery Custome Form element~~ !--> 
+<script type="text/javascript" src="jqtransfor/jquery.jqtransform.js"></script> 
+<!-- ~~Noui Price slider~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.nouislider.js"></script> 
+<!-- ~~jQuery Fancey Box~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.fancybox.js"></script> 
+<!-- ~~Nice scroll~~ !--> 
+<script src="/static/js/jquery.nicescroll.min.js"></script> 
+<!-- ~~Main Script~~ !--> 
+<script type="text/javascript" src="/static/js/script.min.js"></script> 
+<script>$(function () {
+    $('.add').on('click',function(){
+        var $qty=$(this).closest('.qtygroup').find('.qty');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal)) {
+            $qty.val(currentVal + 1);
+        }
+    });
+    $('.minus').on('click',function(){
+        var $qty=$(this).closest('.qtygroup').find('.qty');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+            $qty.val(currentVal - 1);
+        }
+    });
+});</script>
+</body>
+</html>

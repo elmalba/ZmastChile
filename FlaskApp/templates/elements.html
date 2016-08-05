@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>PEAR is a modern ecommerce site template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/sequence.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link href="jqtransfor/jqtransform.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.nouislider.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="header navbar-inverse navbar-fixed-top">
+    <div class="boxwrap">
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="welcome">Welcome to visitor you can <a href="#">Login</a> or <a href="#">Create an Account</a></p>
+            </div>
+            <div class="col-md-6">
+              <ul class="topnav">
+                <li><a href="#"><i class="fa fa-pencil-square-o"></i>Wishlist (0)</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>My Account</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+                <li><a href="#"><i class="fa fa-check-square-o"></i>Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-3 ">
+              <div  class="logo"><a href="#"><img src="images/logo.png" alt="pear logo"></a></div>
+            </div>
+            <div class="col-md-8 col-sm-9 ">
+              <h3><small>Give us a call :</small> +123 456 7890</h3>
+              <br class="clearfix">
+              <ul class="bottomnav">
+                <li class="currency"><a href="#"><i class="fa fa-usd"></i> US Dollar</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i class="fa fa-usd"></i> Uk Pound</a></li>
+                    <li><a href="#"><i class="fa fa-eur"></i> Euro</a></li>
+                  </ul>
+                </li>
+                <li class="language"> <a href="#"><i><img src="images/flag-english.png" alt="english flag"></i> English</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i><img src="images/flag-france.png" alt="france flag"></i>France</a></li>
+                    <li><a href="#"><i><img src="images/flag-germany.png" alt="germany flag"></i>Germany</a></li>
+                  </ul>
+                </li>
+                <li class="cart"><a href="shopping_cart.html"><i class="fa fa-shopping-cart"></i> 2 item(s) - $907.00</a>
+                  <ul class="subnav">
+                    <li>
+                      <div class="car-item">
+                        <p class="center-text">Your recently added item(s)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-04.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-02.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bottom">
+                        <div class="buttons">
+                          <button class="view-cart" onclick="location.href='shopping_cart.html';">VIEW CART</button>
+                          <button class="checkout" onclick="location.href='checkout.html';">CHECKOUT</button>
+                        </div>
+                        <div class="subtotal">
+                          <h5>Shipping: $5.00</h5>
+                          <h5>total: <span class="blue">$907.00</span></h5>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="nav-shadow">
+        <div class="nav-bg">
+          <div class="container  relative">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="nav-wrap collapse navbar-collapse">
+              <ul class="nav">
+                <li><a href="index.html">HOME</a> </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">PAGES</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index.html">Dark Header</a></li>
+                        <li><a href="home.html">Light Header</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">All Products</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products.html">Grid View</a></li>
+                            <li><a href="products_list.html">List View</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Single Product</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products_details.html">Products Details</a></li>
+                            <li><a href="products_details2.html">Products Details 2</a></li>
+                            <li><a href="products_details3.html">Products Details 3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="shopping_cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Single Blog</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="elements.html">UI Elements</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="404.html">440 error</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">MEGA MENU</a>
+                  <div class="dropdown-menu megamenu">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">Dresses (2)</a></li>
+                          <li><a href="products_list.html">Jackets & Coats (21)</a></li>
+                          <li><a href="products_list.html">Suits & Tailoring (42)</a></li>
+                          <li><a href="products_list.html">Tops (28)</a></li>
+                          <li><a href="products_list.html">Shoes (15)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">New collection (35)</a></li>
+                          <li><a href="products_list.html">Shirts & tops (68)</a></li>
+                          <li><a href="products_list.html">Dress & Design (27)</a></li>
+                          <li><a href="products_list.html">Shoulder bags (65)</a></li>
+                          <li><a href="products_list.html">Laptop and Briefcase (5)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="megamenu-add"><img src="images/mega-image.jpg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="products.html">MEN</a></li>
+                <li><a href="products.html">WOMEN</a></li>
+                <li><a href="products.html">FASHION</a></li>
+                <li><a href="products.html">JEWELRY</a></li>
+                <li><a href="products.html">ACCESSORIES</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">BLOG</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog_details.html">Singl Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div id="sb-search" class="sb-search">
+              <form>
+                <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                <input class="sb-search-submit" type="submit" value="">
+                <span class="sb-icon-search"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><strong class="blue">Typography Page</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container elements">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title">Button <strong>Example</strong></h3>
+          <p>
+            <button class="btn btn-lg btn-default" type="button">Default</button>
+            <button class="btn btn-lg btn-primary" type="button">Primary</button>
+            <button class="btn btn-lg btn-success" type="button">Success</button>
+            <button class="btn btn-lg btn-info" type="button">Info</button>
+            <button class="btn btn-lg btn-warning" type="button">Warning</button>
+            <button class="btn btn-lg btn-danger" type="button">Danger</button>
+          </p>
+          <p>
+            <button class="btn btn-default" type="button">Default</button>
+            <button class="btn btn-primary" type="button">Primary</button>
+            <button class="btn btn-success" type="button">Success</button>
+            <button class="btn btn-info" type="button">Info</button>
+            <button class="btn btn-warning" type="button">Warning</button>
+            <button class="btn btn-danger" type="button">Danger</button>
+            <button class="btn btn-success" type="button"><i class="fa fa-home"></i> Success</button>
+            <button class="btn btn-primary" type="button"><i class="fa fa-thumbs-o-up"></i> Primary</button>
+            <button class="btn btn-danger" type="button"><i class="fa fa-exclamation-triangle"></i> Danger</button>
+          </p>
+          <p>
+            <button class="btn btn-sm btn-default" type="button">Default</button>
+            <button class="btn btn-sm btn-primary" type="button">Primary</button>
+            <button class="btn btn-sm btn-success" type="button">Success</button>
+            <button class="btn btn-sm btn-info" type="button">Info</button>
+            <button class="btn btn-sm btn-warning" type="button">Warning</button>
+            <button class="btn btn-sm btn-danger" type="button">Danger</button>
+          </p>
+          <p>
+            <button class="btn btn-xs btn-default" type="button">Default</button>
+            <button class="btn btn-xs btn-primary" type="button">Primary</button>
+            <button class="btn btn-xs btn-success" type="button">Success</button>
+            <button class="btn btn-xs btn-info" type="button">Info</button>
+            <button class="btn btn-xs btn-warning" type="button">Warning</button>
+            <button class="btn btn-xs btn-danger" type="button">Danger</button>
+          </p>
+          <p>
+            <button class="green bordered-bot" type="button">green</button>
+            <button class="blue bordered-bot" type="button">blue</button>
+            <button class="red bordered-bot" type="button">red</button>
+            <button class="gray bordered-bot" type="button">gray</button>
+            <button class="cherry bordered-bot" type="button">cherry</button>
+            <button class="orchid bordered-bot" type="button">orchid</button>
+            <button class="pink bordered-bot" type="button">pink</button>
+            <button class="orange bordered-bot" type="button">orange</button>
+            <button class="teal bordered-bot" type="button">teal</button>
+            <button class="skyblue bordered-bot" type="button">skyblue</button>
+            <button class="jade bordered-bot" type="button">jade</button>
+          </p>
+          <p>
+            <button class="green bordered-bot" type="button"><i class="fa fa-home"></i> green</button>
+            <button class="blue bordered-bot" type="button"><i class="fa fa-thumbs-o-up"></i> blue</button>
+            <button class="red bordered-bot" type="button"><i class="fa fa-exclamation-triangle"></i> Red</button>
+          </p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Deocument <strong>Alerts</strong></h3>
+          <div class="clearfix"></div>
+          <div class="alert alert-success"><i class="fa fa-check"></i> <a href="#" class="alert_close"><i class="fa fa-times"></i></a>
+            <p> <strong>Well done!</strong> You successfully read this important alert message.</p>
+          </div>
+          <div class="alert alert-info"><i class="fa fa-question-circle"></i><a href="#" class="alert_close"><i class="fa fa-times"></i></a>
+            <p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>
+          </div>
+          <div class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i><a href="#" class="alert_close"><i class="fa fa-times"></i></a>
+            <p> <strong>Warning!</strong> Best check yo self, you're not looking too good.</p>
+          </div>
+          <div class="alert alert-danger"> <i class="fa fa-hand-o-down"></i><a href="#" class="alert_close"><i class="fa fa-times"></i></a>
+            <p> <strong>Oh snap!</strong> Change a few things up and try submitting again. </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Process Bar <strong>Example</strong></h3>
+          <div class="clearfix"></div>
+          <div class="progress progress-striped ">
+            <div style="width: 60%;" class="progress-bar">60% <small>Complete (progress bar default)</small></div>
+          </div>
+          <div class="progress progress-striped ">
+            <div style="width: 80%;" class="progress-bar progress-bar-success">80% <small>Complete (success)</small></div>
+          </div>
+          <div class="progress progress-striped ">
+            <div style="width: 70%;" class="progress-bar progress-bar-info">70% <small>Complete (info)</small></div>
+          </div>
+          <div class="progress progress-striped ">
+            <div style="width: 40%;" class="progress-bar progress-bar-warning">40% <small>Complete (warning)</small></div>
+          </div>
+          <div class="progress progress-striped ">
+            <div style="width: 50%;" class="progress-bar progress-bar-danger">50% <small>Complete (danger)</small></div>
+          </div>
+          <div class="progress progress-striped ">
+            <div style="width: 45%" class="progress-bar progress-bar-success">45% <small> Complete (success)</small></div>
+            <div style="width: 25%" class="progress-bar progress-bar-warning">25% <small>Complete (warning)</small></div>
+            <div style="width: 30%" class="progress-bar progress-bar-danger">30% <small>Complete (danger)</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Tooltips <strong>Alerts</strong></h3>
+          <div class="clearfix"></div>
+          <div class="tooltip_example well" id="example">
+            <p style="margin-bottom: 0;" class="muted">Tight pants next level keffiyeh <a title="" data-toggle="tooltip" href="#" data-original-title="Default tooltip" data-placement="left">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a title="" data-toggle="tooltip" href="#" data-original-title="Another tooltip" data-placement="top">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a title="" data-toggle="tooltip" href="#" data-original-title="Another one here too" data-placement="right">whatever keytar</a>, scenester farm-to-table banksy Austin <a title="" data-toggle="tooltip" href="#" data-original-title="The last tip!" data-placement="bottom">twitter handle</a> freegan cred raw denim single-origin coffee viral. </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Highlight Text <strong>Example</strong></h3>
+          <div class="clearfix"></div>
+          <div class="well">
+            <p>Anim pariatur cliche reprehenderit, <span class="highlight_text">enim eiusmod high life</span> accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. <span class="highlight_text light">Nihil anim keffiyeh helvetica,</span> craft beer labore wes anderson cred nesciunt sapiente ea proident.  Ad vegan excepteur butcher vice lomo. </p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="title">List groups <strong>Example</strong></h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="list-group"> <a class="list-group-item active" href="#"> Cras justo odio </a> <a class="list-group-item" href="#">Dapibus ac facilisis in</a> <a class="list-group-item" href="#">Morbi leo risus</a> <a class="list-group-item" href="#">Porta ac consectetur ac</a> <a class="list-group-item" href="#">Vestibulum at eros</a> </div>
+        </div>
+        <!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="list-group"> <a class="list-group-item active" href="#">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a> <a class="list-group-item" href="#">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a> <a class="list-group-item" href="#">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a> </div>
+        </div>
+        <!-- /.col-sm-4 --> 
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="title">Panels <strong>Example</strong></h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+        </div>
+        <!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+        </div>
+        <!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body"> Panel content </div>
+          </div>
+        </div>
+        <!-- /.col-sm-4 --> 
+      </div>
+      <div class="clearfix"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Collaps <strong>Example</strong></h3>
+          <div class="clearfix"></div>
+          <div class="panel-group collaps_example" id="accordion">
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Collapsible Steps 01</a> </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"> Collapsible Steps 02 </a> </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"  class="collapsed"> Collapsible Steps 03</a> </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3 class="title">Lists <strong>Example</strong></h3>
+          <div class="clearfix"></div>
+          <ul class="list">
+            <li><i class="fa fa-check green"></i> Check List - Lorem Ipsum is simply dummy text of the list</li>
+            <li><i class="fa fa-plus blue"></i> Plus List -  Lorem Ipsum is simply</li>
+            <li><i class="fa fa-minus magenta"></i> Minus List -  Lorem Ipsum  the list dummy text </li>
+            <li><i class="fa fa-star orange"></i> Star List -  Lorem Ipsum is simply dummy text of the list</li>
+            <li><i class="fa fa-arrow-right lipurple"></i> Arrow List -  Lorem Ipsum is simply dummy text of the list</li>
+            <li><i class="fa fa-angle-double-right skblue"></i> Arrow 2 List -  Lorem Ipsum is simply </li>
+            <li><i class="fa fa-angle-right dkpurple"></i> Arrow 3 List -  Lorem Ipsum is simply dummy text of </li>
+            <li><i class="fa fa-square gray"></i> Square List -  Lorem Ipsum is simply dummy text of the list</li>
+            <li><i class="fa fa-circle blue"></i> Circle List -  Lorem Ipsum of the list</li>
+            <li><i class="fa fa-times red"></i>Cross List -  Lorem Ipsum is simply dummy list</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="title">Tab <strong>Example</strong></h3>
+      <div class="tab-box">
+        <div id="tabnav">
+          <ul>
+            <li class="active"><a href="#Description">Description</a></li>
+            <li><a href="#Specfications">Specfications</a></li>
+            <li><a href="#Return">Return Info</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <!-- end #nav -->
+        <div class="tab-content-wrap">
+          <div id="Description" class="tab-content"  style="display: block;">
+            <h3>Nunc quis neque eleifend elit fermentum tempor.</h3>
+            <p>Aenean vel velit dolor, id feugiat felis. Donec nec leo iaculis leo interdum vehicula id a sapien. Nulla pulvinar iaculis elit, sed rutrum libero varius porta. Quisque ante nisi, aliquet in scelerisque euismod, pharetra eu ante. Nunc metus risus, adipiscing posuere tincidunt id, auctor et justo. Nam nec mauris ac turpis dictum facilisis vitae ut lacus. Donec auctor tincidunt felis. Vivamus congue, turpis tincidunt cursus cursus, nisi elit pharetra orci, et convallis est lorem et erat. Vivamus in dolor risus. Ut tincidunt pulvinar sem, eget dignissim erat egestas vel.</p>
+            <p>Curabitur eros orci, adipiscing non mollis id, sagittis ac nisi. Integer pretium, odio quis ornare imperdiet, risus nunc vulputate eros, non pellentesque lectus nunc dignissim ante. Nam nec tortor nunc. Nullam sit amet augue est, et lacinia libero.</p>
+          </div>
+          <div id="Specfications" class="tab-content">
+            <table class="spitem">
+              <tbody>
+                <tr>
+                  <td>Lorem Ipsum</td>
+                  <td>Lorem Ipsum is simply</td>
+                  <td>Lorem Ipsum is simply</td>
+                </tr>
+                <tr>
+                  <td>is simply dummy</td>
+                  <td>dummy text of the</td>
+                  <td>dummy text of the</td>
+                </tr>
+                <tr>
+                  <td>is simply dummy </td>
+                  <td>printing and typesetting</td>
+                  <td>printing and typesetting</td>
+                </tr>
+                <tr>
+                  <td>and typesetting industry. </td>
+                  <td>ndustry.</td>
+                  <td>printing and typesetting</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="Return" class="tab-content">
+            <h3>Our Returning information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque. Curabitur quis sem vel justo dictum ullamcorper ac vehicula lacus. Duis nisi dolor, suscipit id adipiscing ac, vestibulum in magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ut metus sem. Etiam in odio eu metus ornare convallis in sit amet lorem. Suspendisse potenti. In non nisl sem, eu rutrum augue. Donec eu dolor vel massa ornare cursus id eget erat. Mauris in ante magna. Curabitur eget risus mi, non interdum lacus. Duis magna leo, rhoncus eget malesuada quis, semper a quam. </p>
+            <p>Morbi imperdiet imperdiet lectus ac pellentesque. Integer diam sem, vulputate in feugiat ut, porttitor eu libero. Integer non dolor ipsum. Cras condimentum mattis turpis quis vestibulum. Nulla a augue ipsum. Donec aliquam velit vel metus fermentum dictum sodales metus condimentum. Nullam id massa quis nulla molestie ultrices eget sed nulla. Cras feugiat odio at tellus euismod lacinia. </p>
+          </div>
+          <div id="Reviews" class="tab-content">
+            <div class="review">
+              <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+              <h5 class="reviewer">John Smeeth</h5>
+              <p class="review-date">06/01/2014</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+            </div>
+            <div class="review">
+              <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+              <h5 class="reviewer">John Smeeth</h5>
+              <p class="review-date">06/01/2014</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+            </div>
+            <div class="review">
+              <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+              <h5 class="reviewer">John Smeeth</h5>
+              <p class="review-date">06/01/2014</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- end #content --> 
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="title">Table<strong>Example</strong></h3>
+      <div class="row">
+        <div class="col-md-6">
+          <p>01. Bordered Table</p>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6">
+          <p>02. Striped Rows Table</p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>03. Contextual Classes Table</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>1</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="success">
+                <td>3</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="info">
+                <td>5</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="warning">
+                <td>7</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="danger">
+                <td>9</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6">
+          <div class="table-responsive">
+            <p>04. Responsive tables</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                  <th>Table heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="title">Products <strong>Thumbnails</strong></h3>
+      <div class="row">
+        <div class="clearfix"></div>
+        <div class="col-md-3 col-sm-6">
+          <div class="products" style=" margin-top:0;">
+            <div class="products-top">
+              <div class="thumbnail"> <img alt="Product Name" src="images/products/small/products-01.png"> </div>
+              <div class="productname">Lorem ipsum dolor sit amet</div>
+              <div class="overly"> <a title="Lorem ipsum dolor sit amet" class="fancybox veiwphoto" data-fancybox-group="featured" href="images/products/large/products-01.png"><i class="fa fa-picture-o">&nbsp;</i></a> <a class="linkdetail" href="products_details2.html"><i class="fa  fa-link"></i></a>
+                <h3 class="overlyprice">$451.00</h3>
+                <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+            </div>
+            <div class="products-bottom">
+              <h4 class="price">$451.00</h4>
+              <p class="name">Lorem ipsum dolor sit amet</p>
+              <div class="button_group">
+                <button onclick="location.href='products_details.html';" class="button" type="button">Add To Cart</button>
+                <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Compare"> <i class="fa fa-exchange"></i></button>
+                <button type="button" class="tool button" data-toggle="tooltip" data-placement="top" data-original-title="Favourite"> <i class="fa fa-heart-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div class="products_list">
+            <div class="item-image"> <img alt="Product Name" src="images/products/small/products-01.png">
+              <div class="overly"> <a title="Lorem ipsum dolor sit amet" class="fancybox veiwphoto" data-fancybox-group="productgrid" href="images/products/large/products-01.png"><i class="fa fa-picture-o">&nbsp;</i></a> <a class="linkdetail" href="products_details.html"><i class="fa  fa-link"></i></a> </div>
+            </div>
+            <div class="item-description">
+              <h4 class="name">Lorem ipsum dolor sit amet</h4>
+              <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> 02 Review(s)</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <hr class="border clearfix">
+              <div class="price">$451.00 <q>$479.00</q></div>
+              <div class="button_group">
+                <button type="button" class="button">Add To Cart</button>
+                <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="footer">
+    <div class="footer-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 information">
+            <h4 class="title"><strong>Information</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="typography.html">About Us</a></li>
+              <li><a href="typography.html">Delivery Information</a></li>
+              <li><a href="typography.html">Privacy Policy</a></li>
+              <li><a href="typography.html">Terms & Conditions</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 account">
+            <h4 class="title"><strong>My Account</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="checkout.html">My Account</a></li>
+              <li><a href="checkout.html">My Order History</a></li>
+              <li><a href="checkout.html">MY Wish list</a></li>
+              <li><a href="shopping_cart.html">Shopping cart</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 contact-info">
+            <h4 class="title"><strong>Contacts</strong></h4>
+            <p><i class="fa fa-phone"></i> 123 456 7890</p>
+            <p><i class="fa fa-envelope-o"></i><a href="mailto:info@yourstore.com">info@yourstore.com</a></p>
+            <p><i class="fa fa-map-marker"></i> <span class="adress">56  Green Street,  Stamford,<br>
+              06903, CT, USA</span></p>
+          </div>
+          <div class="col-md-3 col-sm-6 latest-news">
+            <h4 class="title"><strong>Get Latest News?</strong></h4>
+            <form class="newsletter">
+              <input  type="text" name="" placeholder="Enter Your Email Address">
+              <input type="submit" value="+" data-original-title="SUBMIT" data-placement="top" data-toggle="tooltip" class="tool button">
+            </form>
+            <ul class="payment-icon">
+              <li><a href="#"><img src="images/visa.png" alt="Visa Card"></a></li>
+              <li><a href="#"><img src="images/mastar-card.png" alt="Master Card"></a></li>
+              <li><a href="#"><img src="images/american-express.png" alt="American Express"></a></li>
+              <li><a href="#"><img src="images/paypal.png" alt="Paypal"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2014 All Rights Reserved @ yourcompany.com</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://plus.google.com/‎" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.rss.com/" target="_blank"><i class="fa fa-rss"></i></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <a href="#javascript:void(0)" id="back_top" >TOP</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+
+<!-- ~~jQuery expanding nav~~ !--> 
+<script type="text/javascript" src="js/classie.js"></script> 
+<script type="text/javascript" src="js/uisearch.js"></script> 
+<!-- ~~Sequence Slider~~ !--> 
+<script type="text/javascript"  src="js/jquery.sequence-min.js"></script> 
+<!-- ~~product carousel~~ !--> 
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+<!-- ~~Catagory Navigation~~ !--> 
+<script type="text/javascript" src="js/scriptbreaker-multiple-accordion.js"></script> 
+<!-- ~~Flex slider~~ !--> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+<!-- ~~Jquery Custome Form element~~ !--> 
+<script type="text/javascript" src="jqtransfor/jquery.jqtransform.js"></script> 
+<!-- ~~Noui Price slider~~ !--> 
+<script type="text/javascript" src="js/jquery.nouislider.js"></script> 
+<!-- ~~jQuery Fancey Box~~ !--> 
+<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+<!-- ~~Nice scroll~~ !--> 
+<script src="js/jquery.nicescroll.min.js"></script> 
+<!-- ~~Main Script~~ !--> 
+<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

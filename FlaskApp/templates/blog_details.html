@@ -1,0 +1,52 @@
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Medicos</a></li>
+          <li><strong class="blue">Detalle</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 rightbar">
+          <div class="blog_wrap">
+            <div class="post_details">
+              <div class="post_content">
+               
+                <div class="meta_space">
+                  <div class="post_date"><span>03</span>Jan 2014</div>
+                  
+               
+                </div>
+                  <div class=" col-sm-3 post_content"><br><br><br>
+                      <div class="post-image"><img src="/static/images/productos/{{blog[5]}}.jpg" alt="" ><a src="/static/images/productos/{{blog[6]}}.jpg" data-fancybox-group="featured" class="zoomic fancybox" title="What is Lorem Ipsum?"><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+                    </div>
+                <div class="post-header">
+                  <h3 class="post-title"><a href="#">{{blog[1]}}</a></h3>
+                </div>
+                
+                    <div class=" col-sm-9 post_content">
+                {%for post in blog[2].split("\\n") %}  <p align="justify">{{post}}<br></p> {% endfor %}
+              </div></div>
+            
+              <div class="clearfix"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 leftbar">
+          
+          <div class="clearfix"></div>
+          <div class="leftbox">
+            <h3 class="title"><strong>Find us on </strong> Facebook</h3>
+            <div class="facebookwrap">
+              <iframe id="fbframe" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=230&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=467334619951816"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>

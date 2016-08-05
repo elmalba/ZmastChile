@@ -1,0 +1,209 @@
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Medicos</a></li>
+          <li><strong class="blue">Detalle</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col-md-12">
+          <div class="blog_wrap">
+            <div class="post_details">
+              <div class="post_content">
+                 <div class="post-header">
+                  <h3 class="post-title"><a href="#">RODILLA LIGAMENTOS</a></h3>
+                </div>
+                <div class="meta_space">
+                  <div class="post_date"><span>03</span>Jan 2014</div>
+                </div>
+              
+
+    
+    <div class="col-md-7 ">   
+
+    <div class="col-md-3 "> 
+ <div class="post-image"><img src="/static/images/lesiones/RODILLA.png" alt="" ><a href="/static/images/lesiones/RODILLA.png" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+
+</div>
+    <div class="col-md-9 "> 
+<p>
+    <strong>LESIONES:</strong>
+</p>
+<p>
+    Esguince de los ligamentos de rodilla La rodilla es una articulación que tiene una demanda muy elevada en todos los deportes, y el riesgo de esguince es
+    elevado.
+</p>
+<p>
+    Estos esguinces pueden llegar, hasta la rotura completa del ligamento, principalmente del Ligamento Cruzado Anterior (LCA) y del Ligamento Lateral Interno
+    (LLI).
+</p>
+<p>
+    La rotura del LCA es frecuente en todos los deportes de frenadas (Fútbol, baloncesto, bádminton, esquí,…).
+</p>
+<p>
+    El Ligamento Cruzado Posterior (LCP) y el Ligamento Lateral Externo (LLE), también pueden lesionarse en ciertos deportes (deportes de combate, motocross,
+    fútbol o rugbi).
+</p>
+<p>
+    <strong>SIGNOS Y SÍNTOMAS:</strong>
+</p>
+<p>
+    Distinguimos tres tipos de esguince de rodilla (leve, medio o grave), según el alcance de afectación del ligamento. Dolor, hinchazón e inestabilidad
+    variarán según la gravedad del esguince.
+</p>
+<p>
+
+              
+</div></div>
+    <div class="col-md-5 ">  
+<div class="col-md-12">
+            <div class="newer-products">
+              <h3 class="title"><strong>Soluciones </strong> Zamst</h3>
+              <div class="control"><a id="prev_newer" class="prev" href="#">&lt;</a><a id="next_newer" class="next" href="#">&gt;</a></div>
+              <ul id="newer" class="related3">
+                <li>
+                  <div class="row">
+                   {% for i in range(2) %}
+           
+                  
+                    <div class="col-md-6 col-sm-6">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendados[i][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendados[i][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendados[i][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendados[i][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendados[i][0]}}-{{recomendados[i][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendados[i][2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendados[i][2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendados[i][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendados[i][0]}}-{{recomendados[i][1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendados[i][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+                 {% endfor %}
+                 </div>
+                  
+                </li>
+                 <li>
+                  <div class="row">
+                  
+           
+                  
+                    <div class="col-md-6 col-sm-6">
+                      <div class="products">
+                          <div class="products-top">
+                    <div class="thumbnail"> <img src="/static/images/productos/{{recomendados[2][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{recomendados[2][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{recomendados[2][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{recomendados[2][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{recomendados[2][0]}}-{{recomendados[2][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <h3 class="overlyprice">${{('{:20,}'.format(recomendados[2][2])).replace(",",".")}}.-</h3>
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <h4 class="price">${{('{:20,}'.format(recomendados[2][2])).replace(",",".")}}.-</h4>
+                    <p class="name">{{recomendados[2][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{recomendados[2][0]}}-{{recomendados[2][1]}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" onclick= "Agregar_carro({{recomendados[2][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+            
+               
+                 </div>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div></div>
+    <div class="col-md-7 ">   
+
+    <div class="col-md-4 "> 
+ <div class="post-image"><img src="/static/images/lesiones/RODILLERA.PNG" alt="" ><a href="/static/images/lesiones/RODILLERA.PNG" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+
+</div>
+   <div class="col-md-8 "> 
+<p>
+    <strong>ESTABILIDAD LLE</strong>
+</p>
+<p>
+    Un esguince del Ligamento Lateral Externo se puede producir debido a un impacto recibido en el interior de la rodilla, que lo empuje hacia el exterior.
+</p>
+<p>
+    <strong>ESTABILIDAD LCA</strong>
+</p>
+<p>
+    El Ligamento Cruzado Anterior se suele lesionar debido a una torsión.
+</p>
+  </div>  </div>
+   <div class="col-md-4 "> 
+<p>
+    <strong>ESTABILIDAD LCP</strong>
+</p>
+<p>
+    Las lesiones del Ligamento Cruzado Posterior se deben, principalmente, a un golpe violento recibido en la parte delantera de la rodilla, haciendo que se
+    vaya hacia atrás.
+</p>
+<p>
+    <strong>ESTABILIDAD LLI </strong>
+</p>
+<p>
+    Un esguince del Ligamento Lateral Interno se puede producir debido a un impacto en el exterior de la rodilla, empujándolo hacia el interior.
+</p>
+
+</div>
+
+   <div class="col-md-9 "> 
+        <div class="col-md-5 "> 
+ <div class="post-image"><img src="/static/images/lesiones/LARODILLERA.PNG" alt="" ><a href="/static/images/lesiones/LARODILLERA.PNG" data-fancybox-group="featured" class="zoomic fancybox" title=""><i class="fa fa-search-plus"></i></a><i class="fa fa-picture-o pti"></i></div>
+</div>
+ <div class="col-md-7 "> 
+<p>
+    <strong>LA RODILLERA SEGÚN ZAMST</strong>
+</p>
+<p>
+    Cuando se crean productos al servicio del deportista, es necesario tener en cuenta las exigencias específicas de cada deporte, la biomecánica, la exigencia
+    del gesto, pasando por la ligereza y el confort indispensable para sentirse bien en sus movimientos.
+</p>
+<p>
+    Nuestros productos están concebidos respetando estas exigencias, para proteger al deportista de manera muy precisa según su actividad o su patología, para
+    que recobre la confianza en sus apoyos y se sienta sin ataduras en su práctica deportiva.
+</p>
+
+
+
+</div></div>
+
+      
+            
+              <div class="clearfix"></div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>

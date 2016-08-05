@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>PEAR is a modern ecommerce site template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/sequence.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link href="jqtransfor/jqtransform.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.nouislider.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="header navbar-inverse navbar-fixed-top">
+    <div class="boxwrap">
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="welcome">Welcome to visitor you can <a href="#">Login</a> or <a href="#">Create an Account</a></p>
+            </div>
+            <div class="col-md-6">
+              <ul class="topnav">
+                <li><a href="#"><i class="fa fa-pencil-square-o"></i>Wishlist (0)</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>My Account</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+                <li><a href="#"><i class="fa fa-check-square-o"></i>Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-3 ">
+              <div  class="logo"><a href="#"><img src="images/logo.png" alt="pear logo"></a></div>
+            </div>
+            <div class="col-md-8 col-sm-9 ">
+              <h3><small>Give us a call :</small> +123 456 7890</h3>
+              <br class="clearfix">
+              <ul class="bottomnav">
+                <li class="currency"><a href="#"><i class="fa fa-usd"></i> US Dollar</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i class="fa fa-usd"></i> Uk Pound</a></li>
+                    <li><a href="#"><i class="fa fa-eur"></i> Euro</a></li>
+                  </ul>
+                </li>
+                <li class="language"> <a href="#"><i><img src="images/flag-english.png" alt="english flag"></i> English</a>
+                  <ul class="subnav">
+                    <li><a href="#"><i><img src="images/flag-france.png" alt="france flag"></i>France</a></li>
+                    <li><a href="#"><i><img src="images/flag-germany.png" alt="germany flag"></i>Germany</a></li>
+                  </ul>
+                </li>
+                <li class="cart"><a href="shopping_cart.html"><i class="fa fa-shopping-cart"></i> 2 item(s) - $907.00</a>
+                  <ul class="subnav">
+                    <li>
+                      <div class="car-item">
+                        <p class="center-text">Your recently added item(s)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-04.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="car-item"> <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="images/products/thum/products-thum-02.png" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">Lorem ipsum dolor sit amet</p>
+                          <p><span class="blue">1 x</span> <strong>$451.00</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bottom">
+                        <div class="buttons">
+                          <button class="view-cart" onclick="location.href='shopping_cart.html';">VIEW CART</button>
+                          <button class="checkout" onclick="location.href='checkout.html';">CHECKOUT</button>
+                        </div>
+                        <div class="subtotal">
+                          <h5>Shipping: $5.00</h5>
+                          <h5>total: <span class="blue">$907.00</span></h5>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="nav-shadow">
+        <div class="nav-bg">
+          <div class="container  relative">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="nav-wrap collapse navbar-collapse">
+              <ul class="nav">
+                <li><a href="index.html">HOME</a> </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">PAGES</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index.html">Dark Header</a></li>
+                        <li><a href="home.html">Light Header</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">All Products</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products.html">Grid View</a></li>
+                            <li><a href="products_list.html">List View</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Single Product</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="products_details.html">Products Details</a></li>
+                            <li><a href="products_details2.html">Products Details 2</a></li>
+                            <li><a href="products_details3.html">Products Details 3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="shopping_cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Single Blog</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="elements.html">UI Elements</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="404.html">440 error</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">MEGA MENU</a>
+                  <div class="dropdown-menu megamenu">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">Dresses (2)</a></li>
+                          <li><a href="products_list.html">Jackets & Coats (21)</a></li>
+                          <li><a href="products_list.html">Suits & Tailoring (42)</a></li>
+                          <li><a href="products_list.html">Tops (28)</a></li>
+                          <li><a href="products_list.html">Shoes (15)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <ul class="">
+                          <li><a href="products_list.html">New collection (35)</a></li>
+                          <li><a href="products_list.html">Shirts & tops (68)</a></li>
+                          <li><a href="products_list.html">Dress & Design (27)</a></li>
+                          <li><a href="products_list.html">Shoulder bags (65)</a></li>
+                          <li><a href="products_list.html">Laptop and Briefcase (5)</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="megamenu-add"><img src="images/mega-image.jpg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="products.html">MEN</a></li>
+                <li class="active"><a href="products.html">WOMEN</a></li>
+                <li><a href="products.html">FASHION</a></li>
+                <li><a href="products.html">JEWELRY</a></li>
+                <li><a href="products.html">ACCESSORIES</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">BLOG</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog_details.html">Singl Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div id="sb-search" class="sb-search">
+              <form>
+                <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                <input class="sb-search-submit" type="submit" value="">
+                <span class="sb-icon-search"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Women </a></li>
+          <li><a href="index.html">Dress & Design</a></li>
+          <li><strong class="blue">Lorem ipsum dolor sit amet</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 rightbar">
+          <div class="products-details">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product-view">
+                  <div class="product-img-box"> <img id="big_image" src="images/products/large/products-03c.png" alt=""/> <a href="images/products/extra-large/products-03c.jpg" data-fancybox-group="gallery" class="fancybox box-zoom"><i class="fa fa-expand"></i></a> </div>
+                  <div class="product-img-more">
+                    <ul class="prev-thum">
+                      <li><a href="#" data-image="images/products/large/products-03c.png" data-zoom-image="images/products/extra-large/products-03c.jpg"> <img src="images/products/thum/products-thum-03c.png" alt=""> </a></li>
+                      <li><a href="#" data-image="images/products/large/products-03.png" data-zoom-image="images/products/extra-large/products-03.jpg"> <img src="images/products/thum/products-thum-03.png" alt=""/> </a> </li>
+                      <li><a href="#" data-image="images/products/large/products-03c.png" data-zoom-image="images/products/extra-large/products-03c.jpg"> <img src="images/products/thum/products-thum-03c.png" alt=""> </a></li>
+                      <li><a href="#" data-image="images/products/large/products-03.png" data-zoom-image="images/products/extra-large/products-03.jpg"> <img src="images/products/thum/products-thum-03.png" alt=""> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-details-box">
+                  <h4 class="name">Lorem ipsum dolor sit amet</h4>
+                  <p><span class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i><i class="fa fa-star-o gray"></i> </span> <a href="#">02 Review(s)</a> <span class="separator">|</span> <a href="#">Add your review</a></p>
+                  <hr class="border">
+                  <p class="price">$441.00 <small>$451.00</small></p>
+                  <p>Brand : Soiewomen<br>
+                    Availability : <strong class="green">In Stock</strong><br>
+                    Sku : CL2531</p>
+                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  <hr class="border">
+                  <form>
+                    <p class="color_chooser"> <span class="text"> Color : </span> <a href="javascript:void(0);" class="bg_red">red</a> <a href="javascript:void(0);" class="bg_black">black</a> <a href="javascript:void(0);" class="bg_blue">blue</a> <a href="javascript:void(0);" class="bg_green">Green</a> <a href="javascript:void(0);" class="bg_chocolate">Chocklet</a> </p>
+                    <p class="size_chooser"> <span class="text"> Size : </span> <a href="javascript:void(0);">XXS</a> <a href="javascript:void(0);">XS</a> <a href="javascript:void(0);">S</a> <a href="javascript:void(0);">M</a> <a href="javascript:void(0);">L</a> <a href="javascript:void(0);">XL</a> </p>
+                    <div class="buttons_wrap">
+                      <p class="quantity"> <span class="text">Qty : </span>
+                        <input type="text" class="qty" placeholder="1">
+                      </p>
+                      <button type="button" class="button" onclick="location.href='shopping_cart.html';">Add To Cart</button>
+                      <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                      <button data-original-title="Email to Frind" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-envelope-o"></i></button>
+                    </div>
+                  </form>
+                  <hr class="border">
+                  <div class="share"><span class='st_googleplus_large'></span> <span class='st_facebook_large'></span> <span class='st_twitter_large' ></span> <span class='st_linkedin_large' ></span> <span class='st_pinterest_large' ></span> 
+                    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script> 
+                    <script type="text/javascript">stLight.options({publisher: "ddb92446-f35f-4492-9b8a-d5a4129a6977", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="tab-box">
+              <div id="tabnav">
+                <ul>
+                  <li class="active"><a href="#Description">Description</a></li>
+                  <li><a href="#Specfications">Specfications</a></li>
+                  <li><a href="#Return">Return Info</a></li>
+                  <li><a href="#Reviews">Reviews</a></li>
+                  <li><a href="#writeReviews">Write Reviews</a></li>
+                </ul>
+              </div>
+              <!-- end #nav -->
+              <div class="tab-content-wrap">
+                <div class="tab-content" id="Description">
+                  <h3>Nunc quis neque eleifend elit fermentum tempor.</h3>
+                  <p>Aenean vel velit dolor, id feugiat felis. Donec nec leo iaculis leo interdum vehicula id a sapien. Nulla pulvinar iaculis elit, sed rutrum libero varius porta. Quisque ante nisi, aliquet in scelerisque euismod, pharetra eu ante. Nunc metus risus, adipiscing posuere tincidunt id, auctor et justo. Nam nec mauris ac turpis dictum facilisis vitae ut lacus. Donec auctor tincidunt felis. Vivamus congue, turpis tincidunt cursus cursus, nisi elit pharetra orci, et convallis est lorem et erat. Vivamus in dolor risus. Ut tincidunt pulvinar sem, eget dignissim erat egestas vel.</p>
+                  <p>Curabitur eros orci, adipiscing non mollis id, sagittis ac nisi. Integer pretium, odio quis ornare imperdiet, risus nunc vulputate eros, non pellentesque lectus nunc dignissim ante. Nam nec tortor nunc. Nullam sit amet augue est, et lacinia libero.</p>
+                </div>
+                <div class="tab-content" id="Specfications">
+                  <table class="spitem">
+                    <tbody>
+                      <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum is simply</td>
+                        <td>Lorem Ipsum is simply</td>
+                      </tr>
+                      <tr>
+                        <td>is simply dummy</td>
+                        <td>dummy text of the</td>
+                        <td>dummy text of the</td>
+                      </tr>
+                      <tr>
+                        <td>is simply dummy </td>
+                        <td>printing and typesetting</td>
+                        <td>printing and typesetting</td>
+                      </tr>
+                      <tr>
+                        <td>and typesetting industry. </td>
+                        <td>ndustry.</td>
+                        <td>printing and typesetting</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-content" id="Return">
+                  <h3>Our Returning information</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque. Curabitur quis sem vel justo dictum ullamcorper ac vehicula lacus. Duis nisi dolor, suscipit id adipiscing ac, vestibulum in magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ut metus sem. Etiam in odio eu metus ornare convallis in sit amet lorem. Suspendisse potenti. In non nisl sem, eu rutrum augue. Donec eu dolor vel massa ornare cursus id eget erat. Mauris in ante magna. Curabitur eget risus mi, non interdum lacus. Duis magna leo, rhoncus eget malesuada quis, semper a quam. </p>
+                  <p>Morbi imperdiet imperdiet lectus ac pellentesque. Integer diam sem, vulputate in feugiat ut, porttitor eu libero. Integer non dolor ipsum. Cras condimentum mattis turpis quis vestibulum. Nulla a augue ipsum. Donec aliquam velit vel metus fermentum dictum sodales metus condimentum. Nullam id massa quis nulla molestie ultrices eget sed nulla. Cras feugiat odio at tellus euismod lacinia. </p>
+                </div>
+                <div class="tab-content" id="Reviews">
+                  <div class="review">
+                    <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                    <h5 class="reviewer">John Smeeth</h5>
+                    <p class="review-date">06/01/2014</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+                  </div>
+                  <div class="review">
+                    <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                    <h5 class="reviewer">John Smeeth</h5>
+                    <p class="review-date">06/01/2014</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+                  </div>
+                  <div class="review">
+                    <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o gray"></i> </p>
+                    <h5 class="reviewer">John Smeeth</h5>
+                    <p class="review-date">06/01/2014</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.</p>
+                  </div>
+                </div>
+                <div class="tab-content" id="writeReviews">
+                  <h3>Write your own review</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>&nbsp;</th>
+                        <th>Quality</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>1star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="1">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="1">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="1">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>2star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="2">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="2">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="2">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>3star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="3">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="3">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="3">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>4star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="4">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="4">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="4">
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><strong>5star</strong></td>
+                        <td><div class="cform">
+                            <input type="radio" name="quality" value="5">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="price" value="5">
+                          </div></td>
+                        <td><div class="cform">
+                            <input type="radio" name="value" value="5">
+                          </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>
+                          <label>Your Name <span class="red">*</span></label>
+                          <input type="text" name="">
+                        </p>
+                        <p>
+                          <label>Your Email <span class="red">*</span></label>
+                          <input type="email" name="">
+                        </p>
+                        <p>
+                          <label>Review Summary <span class="red">*</span></label>
+                          <input type="text" name="">
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>
+                          <label>Review</label>
+                          <textarea rows="7"></textarea>
+                        </p>
+                        <p>
+                          <input type="submit" value="Submit">
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- end #content --> 
+            </div>
+            <div class="clearfix"></div>
+            <div class="newer-products">
+              <h3 class="title"><strong>Related</strong> Products</h3>
+              <div class="control"><a id="prev_newer" class="prev" href="#">&lt;</a><a id="next_newer" class="next" href="#">&gt;</a></div>
+              <ul id="newer">
+                <li>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <div class="products">
+                        <div class="products-top">
+                          <div class="thumbnail"> <img src="images/products/small/products-01.png" alt="Product Name"> </div>
+                          <div class="productname">Lorem ipsum dolor sit amet</div>
+                          <div class="overly"> <a href="images/products/large/products-01.png" data-fancybox-group="productgrid" class="fancybox veiwphoto" title="Lorem ipsum dolor sit amet"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="products_details2.html"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                            <h3 class="overlyprice">$451.00</h3>
+                            <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                        </div>
+                        <div class="products-bottom">
+                          <h4 class="price">$451.00</h4>
+                          <p class="name">Lorem ipsum dolor sit amet</p>
+                          <div class="button_group">
+                            <button type="button" class="button">Add To Cart</button>
+                            <button data-original-title="Compare" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-exchange"></i></button>
+                            <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button"> <i class="fa fa-heart-o"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 leftbar">
+          <div class="special-deal">
+            <h3 class="title"><strong>Special </strong> Deals</h3>
+            <div class="special-item">
+              <div class="product-image"><a href="products_details2.html"><img src="images/products/thum/products-thum-04.png" alt=""></a></div>
+              <div class="product-info">
+                <p><a  href="products_details2.html">Lorem ipsum dolor sit consectetuer</a></p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="special-item">
+              <div class="product-image"><a href="products_details2.html"><img src="images/products/thum/products-thum-03.png" alt=""></a></div>
+              <div class="product-info">
+                <p><a  href="products_details2.html">Lorem ipsum dolor sit consectetuer</a></p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="special-item">
+              <div class="product-image"><a href="products_details2.html"><img src="images/products/thum/products-thum-02.png" alt=""></a></div>
+              <div class="product-info">
+                <p><a  href="products_details2.html">Lorem ipsum dolor sit consectetuer</a></p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="special-deal">
+            <h3 class="title"><strong>Featured </strong> Products</h3>
+            <div class="special-item">
+              <div class="product-image"><a href="products_details2.html"><img src="images/products/thum/products-thum-01.png" alt=""></a></div>
+              <div class="product-info">
+                <p><a  href="products_details2.html">Lorem ipsum dolor sit consectetuer</a></p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="special-item">
+              <div class="product-image"><a href="products_details2.html"><img src="images/products/thum/products-thum-02.png" alt=""></a></div>
+              <div class="product-info">
+                <p><a  href="products_details2.html">Lorem ipsum dolor sit consectetuer</a></p>
+                <p class="rating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </p>
+                <h5>$451.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="leftbox">
+            <h3 class="title"><strong>Find us on </strong> Facebook</h3>
+            <div class="facebookwrap">
+              <iframe id="fbframe" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=230&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=467334619951816"></iframe>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="product-tag">
+            <h3 class="title"><strong>Products</strong> Tags</h3>
+            <ul>
+              <li><a href="#">Dresses (2)</a></li>
+              <li><a href="#">Jackets & Coats (9)</a></li>
+              <li><a href="#">Tops (19)</a></li>
+              <li><a href="#">Shoes (7)</a></li>
+              <li><a href="#">Jpg (96)</a></li>
+              <li><a href="#">Accessories (86)</a></li>
+              <li><a href="#">FootWear (13)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="brandingwrap">
+    <div class="container">
+      <div class="logocarousel">
+        <div class="logo-control"><a id="prev_logo" class="prev" href="#">&lt;</a><a id="next_logo" class="next" href="#">&gt;</a></div>
+        <ul id="brandlogo">
+          <li> <a href="#" class=""> <img src="images/activeden.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/graphicriver.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/photodun.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/themeforest.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/videohive.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/activeden.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/graphicriver.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/photodun.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/themeforest.png" alt=""/> </a> </li>
+          <li> <a href="#" class=""> <img src="images/videohive.png" alt=""/> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 information">
+            <h4 class="title"><strong>Information</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="typography.html">About Us</a></li>
+              <li><a href="typography.html">Delivery Information</a></li>
+              <li><a href="typography.html">Privacy Policy</a></li>
+              <li><a href="typography.html">Terms & Conditions</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 account">
+            <h4 class="title"><strong>My Account</strong></h4>
+            <ul class="footer-menu">
+              <li><a href="checkout.html">My Account</a></li>
+              <li><a href="checkout.html">My Order History</a></li>
+              <li><a href="checkout.html">MY Wish list</a></li>
+              <li><a href="shopping_cart.html">Shopping cart</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 contact-info">
+            <h4 class="title"><strong>Contacts</strong></h4>
+            <p><i class="fa fa-phone"></i> 123 456 7890</p>
+            <p><i class="fa fa-envelope-o"></i><a href="mailto:info@yourstore.com">info@yourstore.com</a></p>
+            <p><i class="fa fa-map-marker"></i> <span class="adress">56  Green Street,  Stamford,<br>
+              06903, CT, USA</span></p>
+          </div>
+          <div class="col-md-3 col-sm-6 latest-news">
+            <h4 class="title"><strong>Get Latest News?</strong></h4>
+            <form class="newsletter">
+              <input  type="text" name="" placeholder="Enter Your Email Address">
+              <input type="submit" value="+" data-original-title="SUBMIT" data-placement="top" data-toggle="tooltip" class="tool button">
+            </form>
+            <ul class="payment-icon">
+              <li><a href="#"><img src="images/visa.png" alt="Visa Card"></a></li>
+              <li><a href="#"><img src="images/mastar-card.png" alt="Master Card"></a></li>
+              <li><a href="#"><img src="images/american-express.png" alt="American Express"></a></li>
+              <li><a href="#"><img src="images/paypal.png" alt="Paypal"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2014 All Rights Reserved @ yourcompany.com</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://plus.google.com/‎" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.rss.com/" target="_blank"><i class="fa fa-rss"></i></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <a href="#javascript:void(0)" id="back_top" >TOP</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+
+<!-- ~~jQuery expanding nav~~ !--> 
+<script type="text/javascript" src="js/classie.js"></script> 
+<script type="text/javascript" src="js/uisearch.js"></script> 
+<!-- ~~Sequence Slider~~ !--> 
+<script type="text/javascript"  src="js/jquery.sequence-min.js"></script> 
+<!-- ~~product carousel~~ !--> 
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+<!-- ~~Catagory Navigation~~ !--> 
+<script type="text/javascript" src="js/scriptbreaker-multiple-accordion.js"></script> 
+<!-- ~~Flex slider~~ !--> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+<!-- ~~Jquery Custome Form element~~ !--> 
+<script type="text/javascript" src="jqtransfor/jquery.jqtransform.js"></script> 
+<!-- ~~Noui Price slider~~ !--> 
+<script type="text/javascript" src="js/jquery.nouislider.js"></script> 
+<!-- ~~jQuery Fancey Box~~ !--> 
+<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+<!-- ~~Nice scroll~~ !--> 
+<script src="js/jquery.nicescroll.min.js"></script> 
+<!-- ~~Main Script~~ !--> 
+<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

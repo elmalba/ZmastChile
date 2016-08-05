@@ -1,0 +1,115 @@
+  <div class="boxwrap white-bg pad-bottom30">
+ 
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="shopping-cart">
+        <h3 class="title"><strong>Carrito</strong> de compras</h3>
+        <div class="sipping-table" ng-if="carro.length!=0">
+          <table>
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Detalles</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acccion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in carro">
+                <td><div class="shiping-image" style="width:150px"><img ng-src="/static/images/productos/{{'{{item.id}}'}}.jpg" alt=""></div></td>
+                <td><div class="shiping-description">
+                    <h4>{{"{{item.nombre}}"}}</h4>
+                   
+                  
+                   
+                    <p class="product-code"><span class="text"> Product Code: </span> CL{{"{{item.id}}"}} </p>
+                  </div></td>
+                <td><h5>${{"{{item.precio}}"}}</h5></td>
+                <td><div class="qtygroup">
+                    <input type="text" class="qty" ng-model="item.cantidad" >
+                    <a class="minus" ng-click="bajar($index)" > - </a> <a class="add" ng-click="subir($index)" > + </a> </div></td>
+                <td><h5>{{"{{item.precio*item.cantidad}}"}}</h5></td>
+                <td><div class="action">
+                    <a class="trash" ng-click="eliminar($index)"><i class="fa fa-trash-o"></i></a>
+                    <br>
+                    <br>
+                    <a ng-href="/Producto/{{'{{item.id}}'}}-" class="pencil"><i class="fa  fa-shopping-cart"></i></a>
+                  </div></td>
+              </tr>
+              
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6"><a href="/Productos" class="continue-shopping">Continuar comprando</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+          <!--
+          <div class="col-md-4">
+            <div class="box estimate-tax">
+              <h5>Estimate Shipping and Tax</h5>
+              <form class="cform">
+                <ul>
+                  <li>
+                    <label>Select Country <strong class="red">*</strong></label>
+                    <select class="">
+                      <option>Country name</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>State / Province <strong class="red">*</strong></label>
+                    <select class="">
+                      <option>State</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Zip / Post Code <strong class="red">*</strong></label>
+                    <select class="">
+                      <option>State</option>
+                    </select>
+                  </li>
+                  <li>
+                    <input type="submit" class="button" value="Get a Price Quote">
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box estimate-tax">
+              <h5>Discount Codes</h5>
+              <form class="cform">
+                <ul>
+                  <li>
+                    <label> Enter your coupon code if you have one </label>
+                    <input type="text" name="" >
+                  </li>
+                  <li>
+                    <input type="submit" class="button" id="submit" value="Get a Price Quote">
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div> -->
+          <div class="col-md-4 rightbar" ng-if="carro.length!=0">
+            <div class="box processto-checkout">
+              <ul>
+              
+                <li><span>TOTAL</span> <strong class="blue">${{"{{monto}}"}}</strong></li>
+                <li>
+                  <button onclick="location.href='/checkout';">Proceder a pagar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+

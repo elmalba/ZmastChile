@@ -1,0 +1,50 @@
+ {% if carrito!=[] :%}
+
+                  <ul  class="subnav">
+                    <li>
+                      <div class="car-item">
+                        <p class="center-text">Agregado recientemente Carrito </p>
+                      </div>
+                    </li>
+                    {%if largo-1==0 : %}
+                    {% for i in range(largo-1,largo): %}
+                       <li>
+                      <div class="car-item"> <a href="/Quitar/{{i}}" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="/static/images/productos/{{carrito[i][0]}}.jpg" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">{{carrito[i][1]}}</p>
+                          <p><span class="blue">{{carrito[i][3]}} x</span> <strong>${{carrito[i][2]}}</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    {% endfor%}
+                    {% else :%}
+                    {% for i in range(largo-2,largo): %}
+                    
+                    <li>
+                      <div class="car-item"> <a href="/Quitar/{{i}}" class="remove"><i class="fa fa-times"></i></a>
+                        <div class="product-image"><img src="/static/images/productos/{{carrito[i][0]}}.jpg" alt="products"></div>
+                        <div class="product-details">
+                          <p class="product-name">{{carrito[i][1]}}</p>
+                          <p><span class="blue">{{carrito[i][3]}} x</span> <strong>${{carrito[i][2]}}</strong></p>
+                        </div>
+                      </div>
+                    </li>
+                    {% endfor%}
+                    {% endif %}
+                    <li>
+                      <div class="bottom">
+                        <div class="buttons">
+                          <button class="view-cart" onclick="location.href='shopping_cart.html';">Detalle</button>
+                          <button class="checkout" onclick="location.href='checkout.html';">Pagar</button>
+                        </div>
+                        <div class="subtotal">
+                          
+                          <h5>Total: <span class="blue">${{ monto}}</span></h5>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              {% endif%}

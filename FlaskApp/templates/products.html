@@ -1,0 +1,298 @@
+
+
+  <div class="boxwrap white-bg pad-bottom30">
+    <div class="page-index">
+      <div class="container">
+        <ul>
+          <li><a href="/">Inicio </a></li>
+          
+          <li><strong class="blue">Productos</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 rightbar">
+
+<table class="col-md-10 col-sm-6">
+            <tbody><tr>
+    <td style="width:251px;height:151px;background:url(http://zamst.us/images/Z-RX-bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+                    <div style="clear:both;height:25px;"></div>
+        <div style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z RX
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6" style="color:#fff" >
+                      <p >
+      Escoge el producto adecuado, seleccionando la lesion</p>
+        </div>
+                    <div  style="clear:both;height:-4px;"></div>
+        <div class="col-md-10 col-sm-6">
+                        <select onchange="mostrarcat2(this.value);" style="width:200px;">
+                          <option value="">Seleccionar Lesión</option>
+                          {% for i in  range(problemas|length)  %}
+                      <option value="{{i}}">{{problemas[i][0]}}</option>
+                      {% endfor %}
+                                  </select>
+                    </div>
+    </td>
+    <td>&nbsp;</td>
+    <td style="width:251px;height:151px;background:url(http://zamst.us/images/Z-Sport-bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+                    <div style="clear:both;height:25px;"></div>
+           <div  class="col-md-10 col-sm-6" style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z Sport
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6"  >
+                         <p style="color:#fff">
+        Escoge la ayuda adecuada para tu deporte </p>
+        </div>
+                    <div class="clearfix"></div>
+        <div  class="col-md-10 col-sm-6">
+                        <select onchange="mostrarcat3(this.value);" style="width:180px;">
+                          <option value="">Selecionar deporte</option>
+                      {% for i in  range(deporte|length)  %}
+                      <option value="{{i}}">{{deporte[i][0]}}</option>
+                      {% endfor %}
+                                  </select>
+                    </div>
+    </td>
+    <td>&nbsp;</td>
+    <td style="width:449px;height:151px;background:url(http://zamst.us/images/Knowladge_bg.jpg) no-repeat; border-radius: 15px;" valign="top">
+        <div style="clear:both;height:25px;"></div>
+       <div  class="col-md-10 col-sm-6" style="width:215px; margin:0 auto; font-style:italic;  color:#fff;font-size:17px;">
+      Z Knowledge Center
+        </div>
+        <div style="clear:both;height:10px;"></div>
+                    <div class="col-md-10 col-sm-6" style="width:415px; margin:0 auto; color:#fff;font-size:12px;">
+      Precision engineered support is developed for athletes to maintain strength, enhance rehab, prevent further injuries and protect existing injuries        </div>
+                    <div style="clear:both;height:10px;"></div>
+      <table border="0" style="margin:0 auto;font-family:Arial; color:#fff;font-size:16px;font-weight:bold;">
+          <tbody><tr>          <td><a href="/Procesos" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase">PROCESOS  </a></td>
+          <td>&nbsp;</td>         <td><a href="/Inovacion" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase"> INNOVACIÓN</a></td>
+          <td>&nbsp;</td>         <td><a href="/Lesiones" style="color:#fff;font-size:13px;font-family:'microgrammaefop-boldextRg';text-transform:uppercase">LESIONES </a></td>
+          </tr>     </tbody></table>
+                    
+    </td>
+            </tr>
+        </tbody></table>
+
+
+          <div class="clearfix"></div>
+          <div class="category-products">
+            <div class="sorter">
+              <div class="sort-by">
+                <div class="cform">
+                  <label>Ordenar por  :</label>
+                  <select name="select">
+                    <option value="Default">&nbsp; Nombre </option>
+                    <option value="Price">&nbsp; Vendidos </option>
+                    <option value="Price">&nbsp; Precio </option>
+                   
+                  </select>
+                </div>
+              </div>
+            
+            <div class="limiter">
+                <div class="cform">
+                  <label>Tipo de lesion :</label>
+                  <select name="select">
+                    <option value="9">&nbsp; 9</option>
+                    <option value="Price">&nbsp; 18</option>
+                    <option value="Price">&nbsp; 27</option>
+                    <option value="Price">&nbsp; 36</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+              <div class="display-mode"><span>Display by:</span> <a href="products.html" class="display-grid active">grid</a><a href="products_list.html" class="display-list">List</a></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+
+              {% for i in range(lenprodu): %}
+              <div class="col-md-4 col-sm-6" id="Producto{{productos[i][0]-1}}"  {% if i > 8  %} style="display:none" {% endif %}>
+                <div  class="products" >
+                  <div class="products-top">
+                    <div class="thumbnail"> <img  src="/static/images/productos/{{productos[i][0]}}.jpg" alt="Product Name"> </div>
+                    <div class="productname">{{productos[i][1]}}</div>
+                    <div class="overly"> <a href="/static/images/productos/{{productos[i][0]}}.jpg" data-fancybox-group="featured" class="fancybox veiwphoto" title="{{productos[i][1]}}"><i class="fa fa-picture-o">&nbsp;</i></a> <a href="/Producto/{{productos[i][0]}}-{{productos[i][1].replace("/"," ")}}"  class="linkdetail"><i class="fa  fa-link"></i></a>
+                      <!--<h3  class="overlyprice">${{  productos[i][2] }}</h3>!-->
+                      <span class="overlyrating"> <i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star blue"></i><i class="fa fa-star-half-o blue"></i><i class="fa fa-star-o"></i> </span> </div>
+                  </div>
+                  <div class="products-bottom">
+                    <!--<h4 class="price">${{productos[i][2] }}</h4>!-->
+                    <p class="name">{{productos[i][1]}}</p>
+                    <div class="button_group">
+                      <button type="button" class="button" onclick="location.href='/Producto/{{productos[i][0]}}-{{productos[i][1].replace('/',"")}}';">Ver producto</button>
+                      
+                      <button data-original-title="Favourite" data-placement="top" data-toggle="tooltip" class="tool button" type="button" ng-click= "agregar({{productos[i][0]}})"> <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+           
+        <div class="pager">
+              <p>Mostrando <strong>9</strong> de <span >37 </span> productos:</p>
+              <ul id="paginador">
+                <li><a onclick="cambiarpagina(pag-1)" >&lt;</a></li>
+                <li><a id="pag1" onclick="cambiarpagina(1)"  class="active">1</a></li>
+                {%for i in range(1,paginas) %}
+                <li><a id="pag{{i+1}}" onclick="cambiarpagina({{i+1}})">{{i+1}}</a></li>
+                {%endfor%}
+                <li><a onclick="cambiarpagina(pag+1)">&gt;</a></li>
+              </ul>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-md-3 leftbar">
+              <div class="leftbox brand">
+            <h3 class="title"><strong>Categorias</strong></h3>
+            <ul class="link1">
+              <li class="active"><a onclick="todos()">Todos</a></li>
+              {% for categoria in categorias%}
+              <li><a onclick="mostrarcat({{categoria[0]-1}})">{{categoria[1]}} ({{categoria[2]}}) </a></li>
+              {%endfor%}
+           
+            </ul>
+          </div>
+          
+          <div class="clearfix"></div>
+          <div class="leftbox">
+            <h3 class="title"><strong>Encuentranos en </strong> Facebook</h3>
+            <div class="facebookwrap">
+            <iframe id="fbframe" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fzamstchile&amp;width=230&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=467334619951816"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+ 
+ <script type="text/javascript">
+var pag=1;
+var data={{catarr}};
+var data2={{catarr2|safe}};
+var data3={{catarr3|safe}};
+var pila=[{% for i in range(lenprodu): %}{{productos[i][0]-1}},{% endfor %}]
+
+function cargar(num){
+
+
+for (var i=9*num-9 ; i < (num)*9 && i < 45; i++) { 
+  $("#Producto"+pila[i]).show(600);
+   
+};
+};
+
+function ocultar(){
+
+for (var i = 0; i < 45 ; i++) { 
+  $("#Producto"+i).hide(600);
+  
+};
+
+};
+
+function cambiarpagina(num){ 
+  if (num > 0 && 6 > num){
+pag=num;
+ocultar();
+cargar(num);
+var body = $("html, body");
+body.animate({scrollTop:500}, '500', 'swing', function() { 
+});
+for (var i = 0; i < 45 ; i++) { 
+  $("#pag"+i).attr("class","");
+};
+
+$("#pag"+num).attr("class","active");
+
+}
+};
+
+function mostrarcat(num){
+ocultar();
+
+$("#paginador").hide()
+for (i = 0; i  < data[num].length; ++i) {
+  $("#Producto"+(data[num][i]-1)).show(600);
+
+};
+var body = $("html, body");
+body.animate({scrollTop:500}, '500', 'swing', function() { 
+});
+
+};
+
+function mostrarcat2(num){
+ocultar();
+
+$("#paginador").hide()
+for (i = 0; i  < data2[num].length; ++i) {
+  $("#Producto"+(data2[num][i]-1)).show(600);
+
+};
+var body = $("html, body");
+body.animate({scrollTop:500}, '500', 'swing', function() { 
+});
+
+};
+
+function mostrarcat3(num){
+ocultar();
+
+$("#paginador").hide()
+for (i = 0; i  < data3[num].length; ++i) {
+  $("#Producto"+(data3[num][i]-1)).show(600);
+
+};
+var body = $("html, body");
+body.animate({scrollTop:500}, '500', 'swing', function() { 
+});
+
+};
+function todos(){
+ocultar();
+$("#paginador").show()
+cargar(1);
+var body = $("html, body");
+body.animate({scrollTop:500}, '500', 'swing', function() { 
+});
+
+};
+
+
+ </script>
+<script language="javascript">
+var type = window.location.hash.substr(1);
+var res= type.split("/")
+ocultar();
+window.onload = function() {
+
+
+if (res[0]=="deporte"){
+  mostrarcat3(res[1]);
+}
+else if (res[0]=="problema"){
+  mostrarcat2(res[1]);
+}
+else
+{
+cargar(1);
+}
+
+
+}
+
+</script>

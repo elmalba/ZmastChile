@@ -1,0 +1,445 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme: Modern Slide In
+Version: 1.3
+Theme Author: Ian Lunn @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Theme URL: http://www.sequencejs.com/themes/modern-slide-in/
+
+This is a FREE theme and is available under a MIT License:
+http://www.opensource.org/licenses/mit-license.php
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless otherwise stated.
+*/
+#sequence {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 1170px;
+	font-size: 0.625em;
+	margin: 0 auto;
+	position: relative;
+	height: 450px;
+	z-index: 0;
+}
+#sequence > .sequence-canvas {
+	height: 100%;
+	width: 100%;
+}
+#sequence > .sequence-canvas > li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: -50%;
+}
+#sequence > .sequence-canvas > li img {
+	height: 96%;
+}
+#sequence > .sequence-canvas li > * {
+	position: absolute;
+	/* only cause the left and opacity properties to transition */
+	-webkit-transition-property: left, opacity;
+	-moz-transition-property: left, opacity;
+	-ms-transition-property: left, opacity;
+	-o-transition-property: left, opacity;
+	transition-property: left, opacity;
+}
+.sequence-next, .sequence-prev {
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+	height: 75px;
+	margin-top: -47.5px;
+	display: none;
+}
+.sequence-pause {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+}
+.sequence-paused {
+	opacity: 0.3;
+}
+.sequence-prev {
+	left: 0;
+}
+.sequence-next {
+	right: 0;
+}
+.sequence-prev img, .sequence-next img {
+	height: 100%;
+	width: auto;
+}
+#sequence-preloader {
+	background: #d9d9d9;
+}
+.slider-pagin {
+	float: left;
+	position: relative;
+	left: 6%;
+	bottom: 18%;
+	height: 9px;
+	width: auto;
+	background: url(../images/slider-pagin_bg.png) left center repeat-x;
+	z-index: 100;
+}
+.sequence-pagination {
+	float: left;
+	width: 100%;
+}
+.sequence-pagination li {
+	display: inline-block;
+ *display: inline;
+	width: 16px;
+	height: 16px;
+	margin-left: 100px;
+	position: relative;
+}
+.sequence-pagination li:first-child {
+	margin: 0;
+}
+.sequence-pagination li a {
+	background: none repeat scroll 0 0 #0092FF;
+	border: 3px solid;
+	border-color: rgba(0, 0, 0, 0.90);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	float: left;
+	left: 0;
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10000;
+	cursor: pointer;
+}
+.sequence-pagination li.current a, .sequence-pagination li:hover a {
+	left: -44px;
+	top: -44px;
+	width: 88px;
+	height: 88px;
+	border: 5px solid;
+	border-color: rgba(0, 0, 0, 0.90);
+}
+.sequence-pagination li img {
+	max-width: 100%;
+	max-height: 100%;
+	cursor: pointer;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	display: none;
+}
+.sequence-pagination li.current img, .sequence-pagination li:hover img {
+	display: block;
+	background: none repeat scroll 0 0 #0092FF;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius:50px;
+}
+.sequence-next, .sequence-prev {
+	position: absolute;
+	opacity: 0.6;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+.sequence-next:hover, .sequence-prev:hover {
+	opacity: 1;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#sequence .sltitle {
+	font-size: 3.4em;
+	left: 15%;
+	width: 35%;
+	opacity: 0;
+	bottom: 22%;
+	z-index: 50;
+	font-size: 42px;
+	color: #fff;
+	font-weight: 700;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 15px;
+	width: auto;
+	line-height: 52px;
+	text-transform: uppercase;
+}
+#sequence .animate-in .sltitle {
+	left: 2%;
+	opacity: 1;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .animate-out .sltitle {
+	left: 0%;
+	opacity: 0;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .subtitle {
+	color: black;
+	left: 0%;
+	opacity: 0;
+	bottom: 10%;
+	font-size: 32px;
+	line-height: 36px;
+	color: #fff;
+	background: #0092ff;
+	padding: 5px 10px;
+	z-index: 100;
+}
+#sequence .animate-in .subtitle {
+	left: 2%;
+	opacity: 1;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .animate-out .subtitle {
+	left: 15%;
+	opacity: 0;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .description {
+	font-size: 16px;
+	left: 20%;
+	width: 35%;
+	opacity: 0;
+	top: 92%;
+	color: #fff;
+}
+#sequence .animate-in .description {
+	left: 2%;
+	opacity: 1;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .animate-out .description {
+	left: 1%;
+	opacity: 0;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence .model {
+	left: 25%;
+	bottom: -50%;
+	opacity: 0;
+	position: relative;
+	height: auto !important;
+	max-height: 450px !important;/*width: 30%;
+  min-width: 225px;*/
+	max-width: 60%;
+}
+#sequence .animate-in .model {
+	left: 38%;
+	opacity: 1;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#sequence .animate-out .model {
+	left: 20%;
+	opacity: 0;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+@media only screen and (max-width: 980px) {
+#sequence {
+	height: 350px;
+}
+#sequence .model {
+	max-height: 530px !important;
+	width: auto;
+}
+#sequence .sltitle {
+	font-size: 30px;
+	line-height: 30px;
+}
+#sequence .subtitle {
+	font-size: 24px;
+	line-height: 24px;
+}
+#sequence .description {
+	font-size: 13px;
+	line-height: 16px;
+}
+.sequence-pagination li {
+	margin-left: 70px;
+}
+}
+@media only screen and (max-width: 768px) {
+#sequence {
+	height: 300px;
+}
+#sequence .title {
+	font-size: 2.8em;
+}
+#sequence .subtitle {
+	font-size: 1.6em;
+	line-height: 18px;
+}
+#sequence .sequence-next, #sequence .sequence-prev {
+	height: 60px;
+	margin-top: -40px;
+}
+#sequence .model {
+	max-height: 480px !important;
+	width: auto;
+}
+}
+@media only screen and (max-width: 640px) {
+	.slider-pagin {
+    bottom: 16%;
+    left: 8%;
+}
+}
+
+@media only screen and (max-width: 568px) {
+#sequence .model {
+	left: 0%;
+	min-width: 90%;
+	/*prevents the model from shrinking when the browser is resized*/
+	width: 90%;
+}
+#sequence .animate-in .model {
+	left: 30%;
+	margin-left: -20%;
+}
+#sequence .animate-out .model {
+	left: 50%;
+	margin-left: -20%;
+}
+#sequence .sltitle {
+	background: #a1a1a1;
+	background: rgba(0, 0, 0, 0.3);
+	bottom: -15%;
+	left: 100%;
+	padding: 1%;
+	width: 100%;
+	z-index: 10;
+}
+#sequence .animate-in .stitle {
+	left: 0%;
+}
+#sequence .animate-out .stitle {
+	left: -100%;
+}
+#sequence .subtitle, #sequence .description {
+	visibility: hidden;
+}
+#sequence .sequence-pagination {
+	bottom: 40px;
+}
+#sequence .sequence-pagination li img {
+	height: 100px;
+}
+.slider-pagin {
+	left: 10%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#sequence {
+	height: 250px;
+}
+.sequence-pagination li {
+	margin-left: 50px;
+}
+.sequence-pagination li.current a, .sequence-pagination li:hover a {
+	left: -18px;
+	top: -24px;
+	width: 48px;
+	height: 48px;
+	border-width: 3px;
+}
+
+}
+@media only screen and (max-width: 418px) {
+#sequence {
+	height: 225px;
+}
+}
+@media only screen and (max-width: 368px) {
+#sequence {
+	height: 200px;
+}
+#sequence .title {
+	font-size: 2.2em;
+}
+.sequence-pagination li {
+	margin-left: 40px;
+}
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+/*iphone portrait*/
+#sequence {
+	height: 165px;
+}
+.sequence-pagination li {
+	margin-left: 30px;
+}
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+#sequence {
+	height: 185px;
+}
+#sequence .model {
+	min-width: 50%;
+	width: 100%;
+	height:auto;
+}
+#sequence .animate-in .model {
+	left: 17.5%;
+	margin-left: 0;
+}
+#sequence .animate-out .model {
+	left: 17.5%;
+	margin-left: 0;
+}
+#sequence .sequence-pagination {
+	right: 17.5%;
+}
+}

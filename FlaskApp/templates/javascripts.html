@@ -1,0 +1,197 @@
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+ 
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="/static/js/modernizr.custom.js"></script> 
+
+<!-- ~~jQuery expanding nav~~ !--> 
+<script type="text/javascript" src="/static/js/classie.js"></script> 
+<script type="text/javascript" src="/static/js/uisearch.js"></script> 
+<!-- ~~Sequence Slider~~ !--> 
+<script type="text/javascript"  src="/static/js/jquery.sequence-min.js"></script> 
+<!-- ~~product carousel~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.mousewheel.min.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.touchSwipe.min.js"></script> 
+<!-- ~~Catagory Navigation~~ !--> 
+<script type="text/javascript" src="/static/js/scriptbreaker-multiple-accordion.js"></script> 
+<!-- ~~Flex slider~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.flexslider.js"></script> 
+<!-- ~~Jquery Custome Form element~~ !--> 
+<script type="text/javascript" src="/static/jqtransfor/jquery.jqtransform.js"></script> 
+<!-- ~~Noui Price slider~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.nouislider.js"></script> 
+<!-- ~~jQuery Fancey Box~~ !--> 
+<script type="text/javascript" src="/static/js/jquery.fancybox.js"></script> 
+<!-- ~~Nice scroll~~ !--> 
+<script src="/static/js/jquery.nicescroll.min.js"></script> 
+<!-- ~~Main Script~~ !--> 
+<script type="text/javascript" src="/static/js/script.min.js"></script>
+
+<script type="text/javascript">
+var miAplicacion = angular.module('miAplicacion', []);
+miAplicacion.controller('Controlador', ['$scope','$http', function($scope,$http, dataResource) {
+
+    
+      $scope.nuevo = {};
+      $scope.carro = [{% for carrito in carro %}{ "id": "{{carrito.id}}", "nombre" :"{{carrito.nombre}}","precio" :"{{carrito.precio}}","cantidad":"{{carrito.cantidad}}" }, {%endfor%}];
+      $scope.monto={{monto}};
+
+     
+      $scope.agregar = function(idp) {
+        var existe=false;
+        var item;
+
+        for (i =0; i< $scope.carro.length ; i++){
+        
+
+          if (parseInt($scope.carro[i].id)==parseInt(idp))
+          {
+           
+            item=$scope.carro[i];
+            item.cantidad=parseInt(item.cantidad)+1;
+            $scope.monto=parseInt(item.precio)+$scope.monto;
+            existe=true;
+          }
+
+        }
+
+             
+        $http({method: 'GET', url:'/data/'+idp}).success(function(data)
+{
+     $scope.monto=parseInt(data.data.precio)+$scope.monto;
+ if(existe==false){  
+   $scope.carro.push(data.data);
+ }
+});  
+
+    var body = $("html, body");
+body.animate({scrollTop:0}, '500', 'swing', function() { 
+});      
+
+
+      };
+
+      $scope.agregar_detalle = function(idp,cantidad) {
+
+      
+        var existe=false;
+        var largo=$scope.carro.length;
+        cantidad=parseInt(cantidad)
+        for (i =0; i< $scope.carro.length ; i++){
+          if (parseInt($scope.carro[i].id)==parseInt(idp))
+          {
+           
+            item=$scope.carro[i];
+            item.cantidad=parseInt(item.cantidad)+cantidad;
+            $scope.monto=parseInt(item.precio)*cantidad+$scope.monto;
+            existe=true;
+          }
+
+        }
+
+        if(existe==false){        
+        $http({method: 'GET', url:'/data/'+idp+'/'+cantidad}).success(function(data)
+{
+
+   $scope.carro.push(data.data);
+   $scope.monto=$scope.monto+data.data.precio*data.data.cantidad;
+});  
+
+}
+var largo=$scope.carro.length-1;
+
+    var body = $("html, body");
+body.animate({scrollTop:0}, '500', 'swing', function() { 
+});      
+      };
+
+      $scope.eliminar = function(pos) {
+        $scope.monto=$scope.monto-($scope.carro[pos].cantidad*$scope.carro[pos].precio);
+        $scope.carro.splice(pos, 1);
+        carro=$scope.carro;
+monto=$scope.monto;
+  $http({method: 'GET', url:'/eliminar/'+pos}).success(function(data)
+{
+
+});  
+
+      };
+
+       $scope.subir = function(pos) {
+        
+        
+        var cantidad=$scope.carro[pos].cantidad=parseInt($scope.carro[pos].cantidad)+1;
+        $scope.monto=$scope.monto+parseInt($scope.carro[pos].precio);
+        $http({method: 'GET', url:'/Ncantidad/'+pos+'/'+cantidad}).success(function(data)
+{
+
+});  
+
+      };
+
+       $scope.bajar = function(pos) {
+        var cantidad=$scope.carro[pos].cantidad=parseInt($scope.carro[pos].cantidad)-1;
+        
+         if (cantidad<1){
+         if (confirm("¿Deseas eliminarlo?"))
+         {
+         	$scope.monto=$scope.monto-parseInt($scope.carro[pos].precio);
+          $scope.carro.splice(pos, 1);
+
+            $http({method: 'GET', url:'/eliminar/'+pos}).success(function(data){});  
+
+         }
+      else{
+        $scope.carro[pos].cantidad=1;
+      }
+
+          }
+          else{
+$scope.monto=$scope.monto-parseInt($scope.carro[pos].precio);
+ $http({method: 'GET', url:'/Ncantidad/'+pos+'/'+cantidad}).success(function(data){});  
+
+          }
+
+      };
+
+
+      $scope.generar = function(pos) {
+        $("#generar").hide(20);
+        $scope.nombre=$scope.nuevo.nombre;
+        $scope.apellido=$scope.nuevo.apellido;
+       
+   var xsrf = $.param({nombre:$scope.nuevo.nombre,apellido:$scope.nuevo.apellido,rut:$scope.nuevo.rut,email:$scope.nuevo.email,redfija:$scope.nuevo.phone,celular:$scope.nuevo.celphone,passwd:$scope.nuevo.passwd,passwd2 :$scope.nuevo.passwd2,dir:$scope.nuevo.dir,destintario:$scope.nuevo.destintario,city:$scope.nuevo.city,comuna:$scope.nuevo.comuna,region:$scope.nuevo.region  });
+   
+   $scope.mail=$scope.nuevo.email;
+    $("#esperar").show(20);
+       $("#01").hide(20);
+        $("#02").hide(20);
+        $("#opc-orderReview").hide(20);
+$http({
+        url: "/order",
+        method: "POST",
+         data: xsrf,
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+      }).success(function (data, status, headers, config) {
+        
+       $("#esperar").hide(20);
+        
+
+        $("#order").show(20);
+
+        $scope.orderid=data.order;
+        // assign  $scope.persons here as promise is resolved here 
+        }).error(function (data, status, headers, config) {
+            $scope.status = status + ' ' + headers;
+        });
+
+
+
+
+      };
+
+ }]);
+  </script>
